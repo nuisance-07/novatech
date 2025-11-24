@@ -21,7 +21,7 @@ export default function SalesChart() {
     return (
         <div className="h-[300px] w-full bg-surface rounded-xl border border-white/10 p-4">
             <h3 className="text-lg font-bold text-white mb-4">Sales Overview</h3>
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height={250}>
                 <AreaChart
                     data={data}
                     margin={{
