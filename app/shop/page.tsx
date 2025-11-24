@@ -2,6 +2,8 @@ import connectDB from "@/lib/db";
 import Product from "@/models/Product";
 import ProductCard from "@/components/ui/ProductCard";
 
+export const dynamic = "force-dynamic";
+
 export default async function Shop() {
   await connectDB();
   const products = await Product.find({}).lean();
