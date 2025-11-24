@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import QueryProvider from "@/components/providers/QueryProvider";
 import { CommandMenu } from "@/components/layout/CommandMenu";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
@@ -30,6 +31,7 @@ export default function RootLayout({
           </div>
           <WhatsAppButton />
           <NovaAssistant />
+          <Footer />
         </QueryProvider>
       </body>
     </html>

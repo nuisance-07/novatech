@@ -75,9 +75,31 @@ export default function CartPage() {
                             </div>
                         </div>
 
-                        <button className="w-full py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary-hover transition flex items-center justify-center gap-2">
+                        <button className="w-full py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary-hover transition flex items-center justify-center gap-2 mb-6">
                             Checkout <ArrowRight size={18} />
                         </button>
+
+                        <div className="space-y-4">
+                            <p className="text-xs text-gray-400 text-center uppercase tracking-wider">Secure Payment With</p>
+                            <div className="flex justify-center gap-4 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                                {/* Visa */}
+                                <div className="h-8 w-12 bg-white rounded flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" className="h-3 object-contain" />
+                                </div>
+                                {/* Mastercard */}
+                                <div className="h-8 w-12 bg-white rounded flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="h-5 object-contain" />
+                                </div>
+                                {/* Amex */}
+                                <div className="h-8 w-12 bg-white rounded flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo_%282018%29.svg" alt="Amex" className="h-4 object-contain" />
+                                </div>
+                                {/* PayPal */}
+                                <div className="h-8 w-12 bg-white rounded flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" className="h-4 object-contain" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
