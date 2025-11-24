@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import QueryProvider from "@/components/providers/QueryProvider";
 import { CommandMenu } from "@/components/layout/CommandMenu";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import NovaAssistant from "@/components/ui/NovaAssistant";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
             {children}
           </div>
           <WhatsAppButton />
+          <NovaAssistant />
         </QueryProvider>
       </body>
     </html>
