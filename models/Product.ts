@@ -10,6 +10,7 @@ const ProductSchema = new mongoose.Schema({
   brand: { type: String },
   rating: { type: Number, default: 0 },
   isFeatured: { type: Boolean, default: false },
+  tags: [{ type: String }],
 }, { timestamps: true });
 
 export default mongoose.models.Product || mongoose.model("Product", ProductSchema);

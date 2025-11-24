@@ -14,6 +14,7 @@ import {
   DollarSign,
   Box
 } from "lucide-react";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 
 // --- Mock Data (Replace with API calls) ---
 const MOCK_STATS = [
@@ -38,6 +39,62 @@ const MOCK_ORDERS = [
 
 export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState("overview");
+  const [newProduct, setNewProduct] = useState({
+    name: "",
+    description: "",
+    price: "",
+    category: "Phones",
+    stock: "",
+    images: "",
+  });
+
+  const { data: products = [], isLoading } = useQuery({
+    queryKey: ['products'],
+    queryFn: async () => {
+      const res = await fetch("/api/products");
+      if (!res.ok) throw new Error('Network response was not ok');
+      return res.json();
+    }
+  });
+
+  const deleteMutation = useMutation({
+    mutationFn: async (id: string) => {
+      await fetch(`/api/products/${id}`, { method: "DELETE" });
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['products'] });
+    },
+  });
+
+  const addMutation = useMutation({
+    mutationFn: async (newProduct: any) => {
+      const res = await fetch("/api/products", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...newProduct,
+          price: Number(newProduct.price),
+          stock: Number(newProduct.stock),
+          images: newProduct.images.split(",").map((s: string) => s.trim()),
+        }),
+      });
+      if (!res.ok) throw new Error('Failed to add product');
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['products'] });
+      setNewProduct({ name: "", description: "", price: "", category: "Phones", stock: "", images: "" });
+    },
+  });
+
+  const handleDelete = (id: string) => {
+    if (!confirm("Are you sure?")) return;
+    deleteMutation.mutate(id);
+  };
+
+  const handleAddProduct = (e: React.FormEvent) => {
+    e.preventDefault();
+    addMutation.mutate(newProduct);
+  };
 
   return (
     <div className="flex min-h-screen bg-black text-gray-100 font-sans selection:bg-blue-500/30">
@@ -174,7 +231,7 @@ export default function AdminDashboard() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-800">
-                  {MOCK_PRODUCTS.map((product) => (
+                  {products.map((product: any) => (
                     <tr key={product.id} className="hover:bg-gray-800/50 transition-colors">
                       <td className="px-6 py-4 font-medium text-white">{product.name}</td>
                       <td className="px-6 py-4 text-gray-400">{product.category}</td>

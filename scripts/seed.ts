@@ -19,6 +19,7 @@ const ProductSchema = new mongoose.Schema({
   brand: { type: String },
   rating: { type: Number, default: 4.5 },
   isFeatured: { type: Boolean, default: false },
+  tags: [{ type: String }],
 }, { timestamps: true });
 
 const Product = mongoose.models.Product || mongoose.model("Product", ProductSchema);
@@ -33,6 +34,7 @@ const products = [
     stock: 50,
     isFeatured: true,
     images: ["https://images.unsplash.com/photo-1616348436168-de43ad0db179?auto=format&fit=crop&q=80&w=800"],
+    tags: ["Phone", "Tech", "Mobile", "Flagship"],
   },
   {
     name: "BladeBook Ultra 16",
@@ -43,6 +45,7 @@ const products = [
     stock: 20,
     isFeatured: true,
     images: ["https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80&w=800"],
+    tags: ["Laptop", "Tech", "Computer", "Pro"],
   },
   {
     name: "SonicPods Elite",
@@ -53,6 +56,7 @@ const products = [
     stock: 150,
     isFeatured: true,
     images: ["https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&q=80&w=800"],
+    tags: ["Audio", "Headphones", "Wireless", "Tech"],
   },
   {
     name: "CyberWatch 7",
@@ -63,6 +67,7 @@ const products = [
     stock: 80,
     isFeatured: false,
     images: ["https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&q=80&w=800"],
+    tags: ["Watch", "Wearable", "Health", "Tech"],
   }
 ];
 

@@ -26,10 +26,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/cart/page.js"
     ],
-    "/_not-found/page": [
+    "/shop/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/css/css-node_modules_yet-another-react-lightbox_dist_styles_css.css",
+      "static/chunks/app/shop/[id]/page.js"
     ]
   }
 }
