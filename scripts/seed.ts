@@ -116,7 +116,7 @@ const products = [
     brand: "Samsung",
     stock: 20,
     rating: 4.6,
-    images: ["https://images.unsplash.com/photo-1661347560636-96a3070b4713?auto=format&fit=crop&q=80&w=800"],
+    images: ["https://images.unsplash.com/photo-1610945265064-f3947e854779?auto=format&fit=crop&q=80&w=800"], // Updated to a better phone image
     specs: { "Form Factor": "Foldable", "Multitasking": "3 App Split", "Water Resistant": "IPX8" }
   },
   {
@@ -127,7 +127,7 @@ const products = [
     brand: "Samsung",
     stock: 200,
     rating: 4.5,
-    images: ["https://images.unsplash.com/photo-1678911820864-e2c567c655d7?auto=format&fit=crop&q=80&w=800"],
+    images: ["https://images.unsplash.com/photo-1598327105666-5b89351aff23?auto=format&fit=crop&q=80&w=800"], // Updated to a generic modern phone
     specs: { "Camera": "50MP", "Battery": "5000mAh", "Screen": "120Hz AMOLED" }
   },
   {
@@ -153,7 +153,7 @@ const products = [
     brand: "Tecno",
     stock: 120,
     rating: 4.4,
-    images: ["https://images.unsplash.com/photo-1598327105666-5b89351aff23?auto=format&fit=crop&q=80&w=800"],
+    images: ["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=800"], // Generic sleek phone
     specs: { "Camera": "50MP Periscope", "RAM": "12GB + 12GB Extended", "Charging": "70W" }
   },
   {
@@ -164,7 +164,7 @@ const products = [
     brand: "Infinix",
     stock: 150,
     rating: 4.3,
-    images: ["https://images.unsplash.com/photo-1556656793-02715d8dd6f8?auto=format&fit=crop&q=80&w=800"],
+    images: ["https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&q=80&w=800"], // Generic modern smartphone
     specs: { "Charging": "100W", "Screen": "3D Curved AMOLED", "Speaker": "JBL Tuned" }
   },
   {
@@ -175,7 +175,7 @@ const products = [
     brand: "Xiaomi",
     stock: 80,
     rating: 4.6,
-    images: ["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=800"],
+    images: ["https://images.unsplash.com/photo-1592899677712-a5a254503484?auto=format&fit=crop&q=80&w=800"], // Generic phone
     specs: { "Camera": "200MP", "Charging": "120W HyperCharge", "Protection": "IP68" }
   },
 
@@ -190,7 +190,7 @@ const products = [
     brand: "Google",
     stock: 40,
     rating: 4.7,
-    images: ["https://images.unsplash.com/photo-1612442449529-88732a81df57?auto=format&fit=crop&q=80&w=800"],
+    images: ["https://images.unsplash.com/photo-1598327105666-5b89351aff23?auto=format&fit=crop&q=80&w=800"], // Using a clean phone image
     specs: { "AI": "Gemini Nano", "Camera": "Pro Controls", "Screen": "Super Actua" }
   },
   {
@@ -201,7 +201,7 @@ const products = [
     brand: "OnePlus",
     stock: 35,
     rating: 4.8,
-    images: ["https://images.unsplash.com/photo-1660467566164-338c20892257?auto=format&fit=crop&q=80&w=800"],
+    images: ["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&q=80&w=800"], // Generic phone
     specs: { "Performance": "Snapdragon 8 Gen 3", "Cooling": "Dual Cryo-velocity", "Battery": "5400mAh" }
   },
 
