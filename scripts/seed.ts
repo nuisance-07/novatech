@@ -44,7 +44,7 @@ const products = [
     stock: 50,
     rating: 4.9,
     isFeatured: true,
-    images: ["https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&q=80&w=800"],
+    images: ["https://images.unsplash.com/photo-1696446701796-da61225697cc?q=80&w=800&auto=format&fit=crop"],
     specs: { "Storage": "256GB/512GB", "Chip": "A17 Pro", "Camera": "48MP" }
   },
   {
@@ -276,7 +276,7 @@ const products = [
     brand: "Nintendo",
     stock: 60,
     rating: 4.7,
-    images: ["https://images.unsplash.com/photo-1644365737525-45d475704873?auto=format&fit=crop&q=80&w=800"],
+    images: ["https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=800&auto=format&fit=crop"],
     specs: { "Screen": "7-inch OLED", "Modes": "TV/Tabletop/Handheld", "Storage": "64GB" }
   },
 
