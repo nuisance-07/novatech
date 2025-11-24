@@ -8,11 +8,11 @@ import { ArrowRight, ShoppingBag, Star } from "lucide-react";
 // --- BACKGROUND VIDEOS ---
 // Using reliable tech/futuristic stock footage URLs
 const HERO_VIDEOS = [
-  "https://player.vimeo.com/external/530263629.sd.mp4?s=d07996c0211a7f0552b712215c1e89326f6874e4&profile_id=164&oauth2_token_id=57447761", // Abstract Tech
-  "https://player.vimeo.com/external/372335198.sd.mp4?s=f52033620f4b3602d449348d641158a127027896&profile_id=164&oauth2_token_id=57447761", // Cyberpunk City
-  "https://player.vimeo.com/external/494228990.sd.mp4?s=4e43f4c6c06587c6f062486a480d467973c1d06e&profile_id=164&oauth2_token_id=57447761", // Coding/Data
-  "https://player.vimeo.com/external/315366579.sd.mp4?s=c951152a5c181177695c02604297125301a3579b&profile_id=164&oauth2_token_id=57447761", // Gaming Neon
-  "https://player.vimeo.com/external/499023807.sd.mp4?s=594685333f20a6e3427306236319808a38c26f63&profile_id=165&oauth2_token_id=57447761"  // Abstract Particles
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+  "https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
 ];
 
 export default function Home() {
