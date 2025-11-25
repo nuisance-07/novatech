@@ -55,7 +55,7 @@ const products = [
     stock: 50,
     rating: 4.9,
     isFeatured: true,
-    images: ["https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Storage": "512GB", "RAM": "12GB", "Camera": "200MP" },
     tags: ["phone", "samsung", "flagship", "android"]
   },
@@ -67,7 +67,7 @@ const products = [
     brand: "Samsung",
     stock: 30,
     rating: 4.7,
-    images: ["https://images.unsplash.com/photo-1636199346618-912f70b77873?auto=format&fit=crop&q=80&w=800"], // Generic foldable feel
+    images: [],
     specs: { "Storage": "256GB", "Screen": "Foldable AMOLED" },
     tags: ["phone", "samsung", "foldable", "android"]
   },
@@ -79,7 +79,7 @@ const products = [
     brand: "Samsung",
     stock: 100,
     rating: 4.6,
-    images: ["https://images.unsplash.com/photo-1631281926665-2275464166f9?auto=format&fit=crop&q=80&w=800"], // Generic buds
+    images: [],
     specs: { "Audio": "24-bit Hi-Fi", "ANC": "Yes" },
     tags: ["audio", "buds", "samsung", "wireless"]
   },
@@ -91,7 +91,7 @@ const products = [
     brand: "Samsung",
     stock: 20,
     rating: 4.8,
-    images: ["https://images.unsplash.com/photo-1588702547923-7093a6c3f067?auto=format&fit=crop&q=80&w=800"], // Generic tablet
+    images: [],
     specs: { "Screen": "14.6 inch", "S-Pen": "Included" },
     tags: ["tablet", "samsung", "android"]
   },
@@ -103,7 +103,7 @@ const products = [
     brand: "Samsung",
     stock: 40,
     rating: 4.7,
-    images: ["https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&q=80&w=800"], // Smartwatch
+    images: [],
     specs: { "Size": "47mm", "Health": "BIA Sensor" },
     tags: ["watch", "samsung", "wearable", "fitness"]
   },
@@ -120,7 +120,7 @@ const products = [
     stock: 60,
     rating: 4.9,
     isFeatured: true,
-    images: ["https://images.unsplash.com/photo-1696446701796-da61225697cc?q=80&w=800&auto=format&fit=crop"],
+    images: [],
     specs: { "Storage": "256GB", "Chip": "A17 Pro" },
     tags: ["phone", "apple", "iphone", "ios"]
   },
@@ -132,7 +132,7 @@ const products = [
     brand: "Apple",
     stock: 25,
     rating: 4.8,
-    images: ["https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Chip": "M2", "Screen": "12.9 inch" },
     tags: ["tablet", "apple", "ipad", "ios"]
   },
@@ -144,7 +144,7 @@ const products = [
     brand: "Apple",
     stock: 150,
     rating: 4.8,
-    images: ["https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Case": "USB-C", "ANC": "2x Better" },
     tags: ["audio", "apple", "airpods", "wireless"]
   },
@@ -156,7 +156,7 @@ const products = [
     brand: "Apple",
     stock: 80,
     rating: 4.7,
-    images: ["https://images.unsplash.com/photo-1558590924-119c6742525c?auto=format&fit=crop&q=80&w=800"], // Stylus/Pencil concept
+    images: [],
     specs: { "Charging": "Magnetic", "Compatibility": "iPad Pro/Air" },
     tags: ["accessory", "apple", "creative"]
   },
@@ -168,7 +168,7 @@ const products = [
     brand: "Apple",
     stock: 30,
     rating: 4.9,
-    images: ["https://images.unsplash.com/photo-1551817958-c18561b4b927?auto=format&fit=crop&q=80&w=800"], // Generic watch
+    images: [],
     specs: { "Case": "Titanium", "Battery": "36 Hours" },
     tags: ["watch", "apple", "wearable", "fitness"]
   },
@@ -180,7 +180,7 @@ const products = [
     brand: "Apple",
     stock: 40,
     rating: 4.8,
-    images: ["https://images.unsplash.com/photo-1517336714731-489689fd1ca4?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Chip": "M3", "Screen": "15.3 inch" },
     tags: ["laptop", "apple", "macbook", "computer"]
   },
@@ -196,7 +196,7 @@ const products = [
     brand: "Google",
     stock: 45,
     rating: 4.7,
-    images: ["https://images.unsplash.com/photo-1598327105666-5b89351aff23?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Chip": "Tensor G3", "AI": "Gemini Nano" },
     tags: ["phone", "google", "pixel", "android"]
   },
@@ -208,7 +208,7 @@ const products = [
     brand: "Tecno",
     stock: 100,
     rating: 4.5,
-    images: ["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Camera": "50MP", "Charging": "70W" },
     tags: ["phone", "tecno", "android"]
   },
@@ -220,7 +220,7 @@ const products = [
     brand: "Infinix",
     stock: 120,
     rating: 4.4,
-    images: ["https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Charging": "100W", "Screen": "120Hz" },
     tags: ["phone", "infinix", "android"]
   },
@@ -232,7 +232,7 @@ const products = [
     brand: "Xiaomi",
     stock: 90,
     rating: 4.6,
-    images: ["https://images.unsplash.com/photo-1592899677712-a5a254503484?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Camera": "200MP", "Battery": "5000mAh" },
     tags: ["phone", "xiaomi", "redmi", "android"]
   },
@@ -244,7 +244,7 @@ const products = [
     brand: "Nothing",
     stock: 30,
     rating: 4.7,
-    images: ["https://images.unsplash.com/photo-1519923834699-ef0b7cde4712?auto=format&fit=crop&q=80&w=800"], // Techy vibe
+    images: [],
     specs: { "Interface": "Glyph", "Chip": "Snapdragon 8+ Gen 1" },
     tags: ["phone", "nothing", "android", "unique"]
   },
@@ -256,7 +256,7 @@ const products = [
     brand: "OnePlus",
     stock: 40,
     rating: 4.8,
-    images: ["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Chip": "Snapdragon 8 Gen 3", "Charging": "100W" },
     tags: ["phone", "oneplus", "android"]
   },
@@ -272,7 +272,7 @@ const products = [
     brand: "Anker",
     stock: 80,
     rating: 4.9,
-    images: ["https://images.unsplash.com/photo-1609592424302-16c69ac1c699?auto=format&fit=crop&q=80&w=800"], // Powerbank
+    images: [],
     specs: { "Capacity": "24000mAh", "Output": "140W" },
     tags: ["accessory", "powerbank", "charging"]
   },
@@ -284,7 +284,7 @@ const products = [
     brand: "Samsung",
     stock: 200,
     rating: 4.8,
-    images: ["https://images.unsplash.com/photo-1625750856386-7e447475604f?auto=format&fit=crop&q=80&w=800"], // Charger
+    images: [],
     specs: { "Power": "45W", "Port": "USB-C" },
     tags: ["accessory", "charger", "samsung"]
   },
@@ -296,7 +296,7 @@ const products = [
     brand: "Apple",
     stock: 150,
     rating: 4.7,
-    images: ["https://images.unsplash.com/photo-1617135008568-18507851944f?auto=format&fit=crop&q=80&w=800"], // MagSafe
+    images: [],
     specs: { "Power": "15W", "Type": "Magnetic" },
     tags: ["accessory", "charger", "apple"]
   },
@@ -312,7 +312,7 @@ const products = [
     brand: "Sony",
     stock: 70,
     rating: 4.9,
-    images: ["https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "ANC": "Yes", "Battery": "30 Hours" },
     tags: ["audio", "headphones", "sony", "wireless"]
   },
@@ -324,7 +324,7 @@ const products = [
     brand: "JBL",
     stock: 120,
     rating: 4.8,
-    images: ["https://images.unsplash.com/photo-1543165796-5426273eaab3?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Waterproof": "IP67", "Battery": "12 Hours" },
     tags: ["audio", "speaker", "jbl", "portable"]
   },
@@ -336,7 +336,7 @@ const products = [
     brand: "Bose",
     stock: 15,
     rating: 4.7,
-    images: ["https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&q=80&w=800"], // Speaker/Soundbar
+    images: [],
     specs: { "Audio": "Dolby Atmos", "Voice": "Alexa/Google" },
     tags: ["audio", "soundbar", "home-theater"]
   },
@@ -348,7 +348,7 @@ const products = [
     brand: "Logitech",
     stock: 50,
     rating: 4.8,
-    images: ["https://images.unsplash.com/photo-1590845947698-8924d7409b56?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Pattern": "Multi-pattern", "Connection": "USB" },
     tags: ["audio", "microphone", "streaming"]
   },
@@ -365,7 +365,7 @@ const products = [
     stock: 60,
     rating: 4.9,
     isFeatured: true,
-    images: ["https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Storage": "1TB SSD", "Output": "4K 120Hz" },
     tags: ["gaming", "console", "ps5", "sony"]
   },
@@ -377,7 +377,7 @@ const products = [
     brand: "Sony",
     stock: 100,
     rating: 4.8,
-    images: ["https://images.unsplash.com/photo-1592840496011-a58566d68d41?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Features": "Haptics", "Battery": "Rechargeable" },
     tags: ["gaming", "controller", "ps5"]
   },
@@ -389,7 +389,7 @@ const products = [
     brand: "ASUS",
     stock: 20,
     rating: 4.7,
-    images: ["https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&q=80&w=800"], // Gaming phone vibe
+    images: [],
     specs: { "Chip": "Snapdragon 8 Gen 3", "Screen": "165Hz AMOLED" },
     tags: ["gaming", "phone", "asus", "android"]
   },
@@ -401,7 +401,7 @@ const products = [
     brand: "HyperX",
     stock: 80,
     rating: 4.6,
-    images: ["https://images.unsplash.com/photo-1610041321420-a596dd14ebc9?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Audio": "Dual Chamber", "Comfort": "Memory Foam" },
     tags: ["gaming", "headset", "audio"]
   },
@@ -417,7 +417,7 @@ const products = [
     brand: "SanDisk",
     stock: 60,
     rating: 4.8,
-    images: ["https://images.unsplash.com/photo-1597872252165-4827c9268754?auto=format&fit=crop&q=80&w=800"], // SSD/Hard drive
+    images: [],
     specs: { "Capacity": "1TB", "Speed": "1050MB/s" },
     tags: ["storage", "ssd", "portable"]
   },
@@ -429,7 +429,7 @@ const products = [
     brand: "Samsung",
     stock: 200,
     rating: 4.7,
-    images: ["https://images.unsplash.com/photo-1563396983906-b3795482a59a?auto=format&fit=crop&q=80&w=800"], // SD card
+    images: [],
     specs: { "Capacity": "256GB", "Class": "U3" },
     tags: ["storage", "sdcard", "memory"]
   },
@@ -441,7 +441,7 @@ const products = [
     brand: "Anker",
     stock: 50,
     rating: 4.6,
-    images: ["https://images.unsplash.com/photo-1622617822944-162446731776?auto=format&fit=crop&q=80&w=800"], // Hub
+    images: [],
     specs: { "Ports": "7", "HDMI": "4K" },
     tags: ["storage", "hub", "accessory"]
   },
@@ -457,7 +457,7 @@ const products = [
     brand: "Modio",
     stock: 100,
     rating: 4.2,
-    images: ["https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&q=80&w=800"], // Tablet
+    images: [],
     specs: { "Screen": "7 inch", "OS": "Android" },
     tags: ["tablet", "kids", "modio"]
   },
@@ -469,7 +469,7 @@ const products = [
     brand: "Apple",
     stock: 40,
     rating: 4.8,
-    images: ["https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800"],
+    images: [],
     specs: { "Chip": "M1", "Screen": "10.9 inch" },
     tags: ["tablet", "apple", "ipad"]
   },
@@ -486,7 +486,7 @@ const products = [
     stock: 20,
     rating: 4.9,
     isFeatured: true,
-    images: ["https://images.unsplash.com/photo-1579829366248-204fe8413f31?auto=format&fit=crop&q=80&w=800"], // Drone
+    images: [],
     specs: { "Video": "4K HDR", "Weight": "<249g" },
     tags: ["creator", "drone", "dji", "video"]
   },
@@ -498,7 +498,7 @@ const products = [
     brand: "GoPro",
     stock: 40,
     rating: 4.7,
-    images: ["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&q=80&w=800"], // Action cam
+    images: [],
     specs: { "Video": "5.3K", "Waterproof": "33ft" },
     tags: ["creator", "camera", "action", "gopro"]
   },
@@ -510,7 +510,7 @@ const products = [
     brand: "DJI",
     stock: 60,
     rating: 4.6,
-    images: ["https://images.unsplash.com/photo-1519923834699-ef0b7cde4712?auto=format&fit=crop&q=80&w=800"], // Gimbal vibe
+    images: [],
     specs: { "Axis": "3-Axis", "Feature": "Extension Rod" },
     tags: ["creator", "gimbal", "stabilizer"]
   },
@@ -522,7 +522,7 @@ const products = [
     brand: "Neewer",
     stock: 80,
     rating: 4.5,
-    images: ["https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800"], // Lighting
+    images: [],
     specs: { "Size": "18 inch", "Temp": "3200K-5600K" },
     tags: ["creator", "lighting", "ringlight"]
   }

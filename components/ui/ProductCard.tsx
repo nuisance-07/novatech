@@ -9,14 +9,20 @@ export default function ProductCard({ product }: { product: any }) {
 
   return (
     <div className="group relative bg-surface border border-white/5 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,122,255,0.15)]">
-      <div className="aspect-square relative bg-white/5">
-        <Link href={`/shop/${product._id}`}>
-          <Image
-            src={product.images[0]}
-            alt={product.name}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
-          />
+      <div className="aspect-square relative bg-white/5 flex items-center justify-center">
+        <Link href={`/shop/${product._id}`} className="w-full h-full relative block">
+          {product.images && product.images.length > 0 ? (
+            <Image
+              src={product.images[0]}
+              alt={product.name}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-white/5 text-gray-500">
+              <span className="text-xs font-medium">No Image</span>
+            </div>
+          )}
         </Link>
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
       </div>
