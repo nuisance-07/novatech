@@ -1,5 +1,24 @@
 {
-  "node": {},
+  "node": {
+    "ba21bd02096b18f3c55b28df29e5bd9d545f76cf": {
+      "workers": {
+        "app/shop/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fcollins%2FDesktop%2FMyNovaApp%2Fnovatech%2Fapp%2Factions%2Fsearch.ts%22%2C%5B%22searchProducts%22%5D%5D%5D&__client_imported__=true!",
+        "app/shop/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fcollins%2FDesktop%2FMyNovaApp%2Fnovatech%2Fapp%2Factions%2Fsearch.ts%22%2C%5B%22searchProducts%22%5D%5D%5D&__client_imported__=true!",
+        "app/compare/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fcollins%2FDesktop%2FMyNovaApp%2Fnovatech%2Fapp%2Factions%2Fsearch.ts%22%2C%5B%22searchProducts%22%5D%5D%5D&__client_imported__=true!",
+        "app/cart/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fcollins%2FDesktop%2FMyNovaApp%2Fnovatech%2Fapp%2Factions%2Fsearch.ts%22%2C%5B%22searchProducts%22%5D%5D%5D&__client_imported__=true!",
+        "app/admin/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fcollins%2FDesktop%2FMyNovaApp%2Fnovatech%2Fapp%2Factions%2Fsearch.ts%22%2C%5B%22searchProducts%22%5D%5D%5D&__client_imported__=true!",
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fcollins%2FDesktop%2FMyNovaApp%2Fnovatech%2Fapp%2Factions%2Fsearch.ts%22%2C%5B%22searchProducts%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/shop/page": "action-browser",
+        "app/shop/[id]/page": "action-browser",
+        "app/compare/page": "action-browser",
+        "app/cart/page": "action-browser",
+        "app/admin/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    }
+  },
   "edge": {},
   "encryptionKey": "CP1/VSFrnca/W/xCai9iQd5ghCG8cP4tWFb2vQlGTqg="
 }
