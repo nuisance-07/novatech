@@ -4,13 +4,16 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import connectDB from "@/lib/db";
 import Product from "@/models/Product";
 
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY || "");
-
 export async function chatWithNova(history: { role: "user" | "model"; parts: string }[], message: string) {
     try {
-        if (!process.env.GOOGLE_API_KEY) {
-            return { error: "API key not configured" };
+        const apiKey = process.env.GOOGLE_API_KEY;
+        if (!apiKey) {
+            console.error("API Key is missing in server action");
+            return { error: "API key not configured in server environment" };
         }
+
+        console.log("Initializing Gemini with Key:", apiKey.substring(0, 5) + "...");
+        const genAI = new GoogleGenerativeAI(apiKey);
 
         await connectDB();
 
@@ -63,7 +66,7 @@ export async function chatWithNova(history: { role: "user" | "model"; parts: str
 
         // 3. Initialize Model with JSON generation config
         const model = genAI.getGenerativeModel({
-            model: "gemini-1.5-flash",
+            model: "gemini-flash-latest",
             generationConfig: {
                 responseMimeType: "application/json"
             }

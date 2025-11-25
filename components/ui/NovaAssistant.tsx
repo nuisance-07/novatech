@@ -47,7 +47,7 @@ export default function NovaAssistant() {
             const response = await chatWithNova(history, userMessage);
 
             if (response.error) {
-                setMessages(prev => [...prev, { role: "model", parts: "I'm having trouble connecting. Please check your API key." }]);
+                setMessages(prev => [...prev, { role: "model", parts: `Error: ${response.error}` }]);
             } else if (response.data) {
                 // Display the text response
                 setMessages(prev => [...prev, { role: "model", parts: response.data.text }]);
