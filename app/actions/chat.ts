@@ -15,37 +15,59 @@ export async function chatWithNova(history: { role: "user" | "model"; parts: str
         await connectDB();
 
         // 1. Fetch product context (RAG)
-        // In a real app, we'd use vector search. For now, we'll fetch a summary of top products.
+        // We need the _id for the addToCart action
         const products = await Product.find({})
-            .select("name category price description")
+            .select("name category price description _id")
             .sort({ createdAt: -1 })
             .limit(20)
             .lean();
 
         const productContext = products.map(p =>
-            `- ${p.name} (${p.category}): $${p.price}. ${p.description.substring(0, 100)}...`
+            `- ${p.name} (ID: ${p._id}, Category: ${p.category}): $${p.price}. ${p.description.substring(0, 100)}...`
         ).join("\n");
 
         // 2. Construct System Prompt
         const systemPrompt = `
-      You are Nova, the advanced AI assistant for NovaTech, a premium e-commerce store selling futuristic gadgets.
+      You are Nova, the advanced AI assistant for NovaTech.
       
-      Your Persona:
-      - Helpful, knowledgeable, and slightly futuristic/tech-savvy.
-      - You prioritize sales but are honest about specs.
-      - Keep responses concise (under 3 sentences usually).
-      
-      Product Context (Available Inventory):
+      Your Capabilities:
+      1. Answer questions about products.
+      2. Navigate the user to different pages (Shop, Cart, specific product pages).
+      3. Add products to the user's cart.
+
+      Product Inventory:
       ${productContext}
       
-      Rules:
-      - Only recommend products from the context above.
-      - If asked about something we don't have, politely say we don't carry it yet.
-      - Format prices as $X,XXX.
+      RESPONSE FORMAT:
+      You must respond with a JSON object. Do not include markdown formatting like \`\`\`json.
+      
+      Schema:
+      {
+        "text": "Your conversational response to the user",
+        "action": {
+          "type": "navigate" | "addToCart" | null,
+          "payload": {
+            "path": "string (e.g., '/shop', '/cart', '/product/[id]')",
+            "productId": "string (exact ID from inventory)",
+            "productName": "string (name of product for confirmation)",
+            "price": number (price of product for cart)"
+          }
+        }
+      }
+
+      Examples:
+      - User: "Go to the shop" -> { "text": "Taking you to the shop now.", "action": { "type": "navigate", "payload": { "path": "/shop" } } }
+      - User: "Add the iPhone 15 to my cart" -> { "text": "I've added the iPhone 15 to your cart.", "action": { "type": "addToCart", "payload": { "productId": "...", "productName": "iPhone 15", "price": 799 } } }
+      - User: "Hello" -> { "text": "Hi there! How can I help you today?", "action": null }
     `;
 
-        // 3. Initialize Model
-        const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
+        // 3. Initialize Model with JSON generation config
+        const model = genAI.getGenerativeModel({
+            model: "gemini-1.5-flash",
+            generationConfig: {
+                responseMimeType: "application/json"
+            }
+        });
 
         // 4. Start Chat
         const chat = model.startChat({
@@ -56,7 +78,12 @@ export async function chatWithNova(history: { role: "user" | "model"; parts: str
                 },
                 {
                     role: "model",
-                    parts: [{ text: "Understood. I am Nova, ready to assist with NovaTech's futuristic inventory." }],
+                    parts: [{
+                        text: JSON.stringify({
+                            text: "Understood. I am Nova, ready to assist with NovaTech's futuristic inventory.",
+                            action: null
+                        })
+                    }],
                 },
                 ...history.map(msg => ({
                     role: msg.role,
@@ -72,34 +99,18 @@ export async function chatWithNova(history: { role: "user" | "model"; parts: str
         const text = response.text();
         console.log("Gemini response received:", text.substring(0, 50) + "...");
 
-        return { text };
+        try {
+            // Parse the JSON response
+            const data = JSON.parse(text);
+            return { data };
+        } catch (e) {
+            console.error("Failed to parse JSON response:", text);
+            // Fallback for malformed JSON
+            return { data: { text: text, action: null } };
+        }
+
     } catch (error: any) {
         console.error("Detailed Gemini Error:", error);
-
-        // Log specific GoogleGenerativeAI error properties if available
-        if (error.response) {
-            console.error("Gemini Response Error:", JSON.stringify(error.response, null, 2));
-        }
-
-        const fs = require('fs');
-        const logData = JSON.stringify({
-            timestamp: new Date().toISOString(),
-            message: error.message,
-            stack: error.stack,
-            name: error.name,
-            apiKeyPresent: !!process.env.GOOGLE_API_KEY,
-            apiKeyLength: process.env.GOOGLE_API_KEY?.length,
-            // Capture any other relevant properties
-            ...error
-        }, null, 2);
-
-        try {
-            fs.writeFileSync('debug_error.log', logData);
-        } catch (fsError) {
-            console.error("Failed to write debug log:", fsError);
-        }
-
-        console.error("Gemini Chat Error Details:", logData);
         return { error: `Connection error: ${error.message || "Unknown error"}` };
     }
 }

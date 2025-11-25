@@ -4,6 +4,8 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, X, Send, Loader2, Bot, User } from "lucide-react";
 import { chatWithNova } from "@/app/actions/chat";
+import { useRouter } from "next/navigation";
+import { useCartStore } from "@/store/useCartStore";
 
 interface Message {
     role: "user" | "model";
@@ -18,6 +20,9 @@ export default function NovaAssistant() {
     const [input, setInput] = useState("");
     const [isLoading, setIsLoading] = useState(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
+
+    const router = useRouter();
+    const addItem = useCartStore((state) => state.addItem);
 
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -37,15 +42,35 @@ export default function NovaAssistant() {
 
         try {
             // Convert messages to history format for the server action
-            // We exclude the very last user message from history as it's the current prompt
             const history = messages.map(m => ({ role: m.role, parts: m.parts }));
 
             const response = await chatWithNova(history, userMessage);
 
             if (response.error) {
                 setMessages(prev => [...prev, { role: "model", parts: "I'm having trouble connecting. Please check your API key." }]);
-            } else if (response.text) {
-                setMessages(prev => [...prev, { role: "model", parts: response.text }]);
+            } else if (response.data) {
+                // Display the text response
+                setMessages(prev => [...prev, { role: "model", parts: response.data.text }]);
+
+                // Handle actions
+                if (response.data.action) {
+                    const { type, payload } = response.data.action;
+
+                    if (type === "navigate" && payload?.path) {
+                        router.push(payload.path);
+                    } else if (type === "addToCart" && payload?.productId) {
+                        // Construct a minimal product object for the cart
+                        // In a real app, we might fetch the full product details first, 
+                        // but here we rely on the payload or just the ID/Name/Price
+                        addItem({
+                            _id: payload.productId,
+                            name: payload.productName || "Product",
+                            price: payload.price || 0,
+                            images: [], // Images are removed as per request
+                            quantity: 1
+                        });
+                    }
+                }
             }
         } catch (error) {
             setMessages(prev => [...prev, { role: "model", parts: "Something went wrong. Please try again." }]);
@@ -90,8 +115,8 @@ export default function NovaAssistant() {
                                         {msg.role === "user" ? <User size={14} /> : <Bot size={14} />}
                                     </div>
                                     <div className={`rounded-2xl p-3 text-sm max-w-[80%] ${msg.role === "user"
-                                            ? "bg-white/10 text-white rounded-tr-none"
-                                            : "bg-white/5 text-gray-200 rounded-tl-none border border-white/5"
+                                        ? "bg-white/10 text-white rounded-tr-none"
+                                        : "bg-white/5 text-gray-200 rounded-tl-none border border-white/5"
                                         }`}>
                                         {msg.parts}
                                     </div>
