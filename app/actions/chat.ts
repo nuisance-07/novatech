@@ -66,13 +66,25 @@ export async function chatWithNova(history: { role: "user" | "model"; parts: str
         });
 
         // 5. Send Message
+        console.log("Sending message to Gemini...");
         const result = await chat.sendMessage(message);
         const response = result.response;
         const text = response.text();
+        console.log("Gemini response received:", text.substring(0, 50) + "...");
 
         return { text };
-    } catch (error) {
-        console.error("Gemini Chat Error:", error);
+    } catch (error: any) {
+        const fs = require('fs');
+        const logData = JSON.stringify({
+            timestamp: new Date().toISOString(),
+            message: error.message,
+            stack: error.stack,
+            apiKeyPresent: !!process.env.GOOGLE_API_KEY,
+            apiKeyLength: process.env.GOOGLE_API_KEY?.length
+        }, null, 2);
+        fs.writeFileSync('debug_error.log', logData);
+
+        console.error("Gemini Chat Error Details:", logData);
         return { error: "I'm having trouble connecting to the neural network right now." };
     }
 }
