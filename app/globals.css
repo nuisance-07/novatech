@@ -2,33 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-.glass-premium {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
-
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 5, 5, 5;
-  --background-end-rgb: 0, 0, 0;
+  --background-start-rgb: 26, 26, 26;
+  --background-end-rgb: 26, 26, 26;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  min-height: 100vh;
+@layer base {
+  body {
+    @apply bg-background text-white font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold mb-6;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold mb-4;
+  }
+
+  p {
+    @apply leading-relaxed text-gray-300;
+  }
 }
 
 @layer utilities {
+  .glass-premium {
+    @apply bg-surface/80 backdrop-blur-md border border-white/5 shadow-card;
+  }
+  
+  .glass {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10;
+  }
+
   .text-balance {
     text-wrap: balance;
-  }
-  .glass {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }

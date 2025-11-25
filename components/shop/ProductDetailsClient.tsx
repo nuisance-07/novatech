@@ -29,14 +29,14 @@ export default function ProductDetailsClient({ product, relatedProducts }: { pro
                     {/* Product Info */}
                     <div className="space-y-8">
                         <div>
-                            <p className="text-primary font-medium mb-2 uppercase tracking-wider">{product.category}</p>
-                            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{product.name}</h1>
-                            <p className="text-3xl font-bold text-white transition-all duration-300">
+                            <p className="text-primary font-bold mb-2 uppercase tracking-widest text-sm">{product.category}</p>
+                            <h1 className="text-5xl md:text-6xl font-heading font-bold text-white mb-6 tracking-tight">{product.name}</h1>
+                            <p className="text-4xl font-bold text-white transition-all duration-300">
                                 ${currentPrice}
                             </p>
                         </div>
 
-                        <p className="text-gray-400 text-lg leading-relaxed">
+                        <p className="text-gray-300 text-lg leading-relaxed font-sans">
                             {product.description}
                         </p>
 
@@ -53,7 +53,7 @@ export default function ProductDetailsClient({ product, relatedProducts }: { pro
                         {/* Tags */}
                         <div className="flex flex-wrap gap-2">
                             {product.tags?.map((tag: string) => (
-                                <span key={tag} className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-400">
+                                <span key={tag} className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-gray-400 hover:text-white hover:border-white/20 transition-colors">
                                     #{tag}
                                 </span>
                             ))}
@@ -63,15 +63,15 @@ export default function ProductDetailsClient({ product, relatedProducts }: { pro
             </FadeIn>
 
             {/* Scrollytelling Feature Highlight */}
-            <div ref={targetRef} className="py-24 mb-24 border-t border-white/10 overflow-hidden">
+            <div ref={targetRef} className="py-32 mb-24 border-t border-white/5 overflow-hidden">
                 <motion.div
                     style={{ opacity, scale }}
                     className="text-center max-w-4xl mx-auto px-4"
                 >
-                    <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
+                    <h2 className="text-5xl md:text-7xl font-heading font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-500">
                         Designed for Excellence.
                     </h2>
-                    <p className="text-xl text-gray-400 leading-relaxed">
+                    <p className="text-2xl text-gray-400 leading-relaxed font-light">
                         Every detail of the {product.name} has been meticulously crafted to provide an unparalleled experience.
                         From the premium materials to the cutting-edge technology within, this is more than just a device—it's a statement.
                     </p>
@@ -81,9 +81,9 @@ export default function ProductDetailsClient({ product, relatedProducts }: { pro
             {/* Ecosystem Cross-Selling */}
             {relatedProducts.length > 0 && (
                 <FadeIn delay={0.2}>
-                    <div className="mb-8">
-                        <h2 className="text-2xl font-bold mb-2">Complete Your Ecosystem</h2>
-                        <p className="text-gray-400">Works best with these accessories.</p>
+                    <div className="mb-12 text-center">
+                        <h2 className="text-3xl font-heading font-bold mb-3 text-white">Complete Your Ecosystem</h2>
+                        <p className="text-gray-400 text-lg">Works best with these accessories.</p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                         {relatedProducts.map((p: any) => (
