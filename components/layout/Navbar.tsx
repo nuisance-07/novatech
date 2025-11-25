@@ -6,6 +6,7 @@ import { useCartStore } from "@/store/useCartStore";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const cartItemsCount = useCartStore((state) => state.items.length);
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md border-b border-white/5 transition-all duration-300">
@@ -32,9 +33,9 @@ export default function Navbar() {
             </button>
             <Link href="/cart" className="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-full hover:bg-white/5 relative">
               <ShoppingCart className="h-5 w-5" />
-              {useCartStore((state) => state.items.length) > 0 && (
+              {cartItemsCount > 0 && (
                 <span className="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
-                  {useCartStore((state) => state.items.length)}
+                  {cartItemsCount}
                 </span>
               )}
             </Link>
