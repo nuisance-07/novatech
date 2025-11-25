@@ -45,7 +45,7 @@ export async function chatWithNova(history: { role: "user" | "model"; parts: str
     `;
 
         // 3. Initialize Model
-        const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+        const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
         // 4. Start Chat
         const chat = model.startChat({
@@ -74,17 +74,32 @@ export async function chatWithNova(history: { role: "user" | "model"; parts: str
 
         return { text };
     } catch (error: any) {
+        console.error("Detailed Gemini Error:", error);
+
+        // Log specific GoogleGenerativeAI error properties if available
+        if (error.response) {
+            console.error("Gemini Response Error:", JSON.stringify(error.response, null, 2));
+        }
+
         const fs = require('fs');
         const logData = JSON.stringify({
             timestamp: new Date().toISOString(),
             message: error.message,
             stack: error.stack,
+            name: error.name,
             apiKeyPresent: !!process.env.GOOGLE_API_KEY,
-            apiKeyLength: process.env.GOOGLE_API_KEY?.length
+            apiKeyLength: process.env.GOOGLE_API_KEY?.length,
+            // Capture any other relevant properties
+            ...error
         }, null, 2);
-        fs.writeFileSync('debug_error.log', logData);
+
+        try {
+            fs.writeFileSync('debug_error.log', logData);
+        } catch (fsError) {
+            console.error("Failed to write debug log:", fsError);
+        }
 
         console.error("Gemini Chat Error Details:", logData);
-        return { error: "I'm having trouble connecting to the neural network right now." };
+        return { error: `Connection error: ${error.message || "Unknown error"}` };
     }
 }
