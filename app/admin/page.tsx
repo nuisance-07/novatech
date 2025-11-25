@@ -58,8 +58,37 @@ export default function AdminDashboard() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Chart Section */}
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 space-y-8">
           <SalesChart />
+
+          {/* Database Management */}
+          <div className="bg-surface rounded-xl border border-white/10 p-6">
+            <h3 className="text-lg font-bold mb-4">Database Management</h3>
+            <p className="text-gray-400 mb-4 text-sm">
+              Use this to reset and repopulate the database with initial product data.
+              <span className="text-red-400 block mt-1">Warning: This will delete all existing products!</span>
+            </p>
+            <button
+              onClick={async () => {
+                if (confirm("Are you sure? This will wipe all current products.")) {
+                  try {
+                    const res = await fetch('/api/seed', { method: 'POST' });
+                    const data = await res.json();
+                    if (res.ok) {
+                      alert(`Success! ${data.count} products seeded.`);
+                    } else {
+                      alert('Failed: ' + data.error);
+                    }
+                  } catch (e) {
+                    alert('Error connecting to server');
+                  }
+                }
+              }}
+              className="px-4 py-2 bg-red-500/10 text-red-500 border border-red-500/20 rounded-lg hover:bg-red-500/20 transition-colors font-medium text-sm"
+            >
+              Reset & Seed Database
+            </button>
+          </div>
         </div>
 
         {/* Recent Sales Table */}

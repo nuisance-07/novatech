@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -8,17 +8,17 @@ import { CommandMenu } from "@/components/layout/CommandMenu";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import NovaAssistant from "@/components/ui/NovaAssistant";
 
-// const inter = Inter({
-//   subsets: ["latin"],
-//   variable: "--font-inter",
-//   display: "swap",
-// });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
-// const montserrat = Montserrat({
-//   subsets: ["latin"],
-//   variable: "--font-montserrat",
-//   display: "swap",
-// });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "NovaTech | Future Commerce",
@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
       <body className="font-sans bg-background text-white antialiased selection:bg-primary/30">
         <QueryProvider>
           <Navbar />
