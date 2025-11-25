@@ -1,7 +1,7 @@
-"use client";
 import Link from "next/link";
 import { ShoppingCart, Search, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useCartStore } from "@/store/useCartStore";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +31,11 @@ export default function Navbar() {
             </button>
             <Link href="/cart" className="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-full hover:bg-white/5 relative">
               <ShoppingCart className="h-5 w-5" />
-              {/* Optional: Add badge here if needed using useCartStore */}
+              {useCartStore((state) => state.items.length) > 0 && (
+                <span className="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
+                  {useCartStore((state) => state.items.length)}
+                </span>
+              )}
             </Link>
             <div className="-mr-2 flex md:hidden">
               <button

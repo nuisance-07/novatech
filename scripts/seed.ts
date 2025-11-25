@@ -22,6 +22,8 @@ const ProductSchema = new mongoose.Schema({
       'Samsung',
       'Apple',
       'Smartphones',
+      'Laptops',
+      'Accessories',
       'Mobile Accessories',
       'Audio',
       'Gaming',
@@ -48,16 +50,29 @@ const products = [
   // ==========================
   {
     name: "Samsung Galaxy S24 Ultra",
-    description: "The ultimate Galaxy experience with AI, Titanium frame, and S Pen.",
+    description: "Experience the pinnacle of Android innovation with the Samsung Galaxy S24 Ultra. Featuring a stunning 6.8-inch Dynamic AMOLED 2X display with a 120Hz refresh rate, this device delivers unparalleled visual clarity and smoothness. The titanium frame ensures durability while maintaining a premium feel. Powered by the Snapdragon 8 Gen 3 for Galaxy, it handles the most demanding tasks with ease. Capture every moment in breathtaking detail with the 200MP main camera and AI-enhanced zoom capabilities. The integrated S Pen unlocks new levels of productivity and creativity, making it the ultimate tool for professionals and creators alike.",
     price: 1299,
     category: "Samsung",
     brand: "Samsung",
     stock: 50,
     rating: 4.9,
     isFeatured: true,
-    images: [],
-    specs: { "Storage": "512GB", "RAM": "12GB", "Camera": "200MP" },
-    tags: ["phone", "samsung", "flagship", "android"]
+    images: ["https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&q=80&w=800"],
+    specs: { "Storage": "512GB", "RAM": "12GB", "Camera": "200MP Main + 50MP Periscope", "Screen": "6.8-inch Dynamic AMOLED 2X", "Battery": "5000mAh" },
+    tags: ["phone", "samsung", "flagship", "android", "smartphone", "ai", "5g"]
+  },
+  // ... (other items) ...
+  {
+    name: "Sony WH-1000XM5",
+    description: "Immerse yourself in pure sound with the Sony WH-1000XM5 Wireless Noise Canceling Headphones. Industry-leading noise cancellation, powered by two processors and eight microphones, blocks out more high and mid-frequency sound than ever before. The specially designed 30mm driver unit delivers superior audio quality for all your entertainment. With up to 30 hours of battery life and quick charging, you'll have enough power for even the longest trips. The lightweight, comfortable design with soft fit leather ensures you can wear them all day without fatigue. Crystal clear hands-free calling and multipoint connection make them perfect for work and play.",
+    price: 399,
+    category: "Audio",
+    brand: "Sony",
+    stock: 70,
+    rating: 4.9,
+    images: ["https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&q=80&w=800"],
+    specs: { "ANC": "Yes, Dual Processor", "Battery": "30 Hours", "Type": "Over-ear", "Connectivity": "Bluetooth 5.2" },
+    tags: ["audio", "headphones", "sony", "wireless", "noise-cancelling"]
   },
   {
     name: "Samsung Galaxy Z Flip 5",
@@ -113,28 +128,28 @@ const products = [
   // ==========================
   {
     name: "iPhone 15 Pro Max",
-    description: "Titanium design, A17 Pro chip, and the most powerful iPhone camera ever.",
+    description: "Forged in titanium, the iPhone 15 Pro Max is the lightest, most durable Pro model ever. The A17 Pro chip brings a new era of performance, enabling console-level gaming and seamless multitasking. The all-new Action button provides instant access to your favorite features. With the most advanced Pro camera system yet, including a 5x Telephoto lens, you can capture stunning photos and videos from any distance. The Super Retina XDR display with ProMotion and Always-On technology offers an immersive viewing experience, while the USB-C connector with USB 3 speeds enables faster data transfer and professional workflows.",
     price: 1199,
     category: "Apple",
     brand: "Apple",
     stock: 60,
     rating: 4.9,
     isFeatured: true,
-    images: [],
-    specs: { "Storage": "256GB", "Chip": "A17 Pro" },
-    tags: ["phone", "apple", "iphone", "ios"]
+    images: ["https://images.unsplash.com/photo-1696446701796-da61225697cc?auto=format&fit=crop&q=80&w=800"],
+    specs: { "Storage": "256GB", "Chip": "A17 Pro", "screen": "6.7-inch Super Retina XDR", "camera": "48MP Main + 5x Telephoto", "battery": "4422mAh" },
+    tags: ["phone", "apple", "iphone", "ios", "smartphone", "titanium", "5g"]
   },
   {
-    name: "iPad Pro 12.9 (M2)",
-    description: "The ultimate iPad experience with M2 chip and Liquid Retina XDR display.",
+    name: "iPad Pro 12.9",
+    description: "The iPad Pro 12.9-inch is the ultimate iPad experience, powered by the breakthrough M2 chip. The Liquid Retina XDR display delivers true-to-life detail with a 1,000,000:1 contrast ratio, great for viewing and editing HDR photos and videos or enjoying your favorite movies and TV shows. With support for the Apple Pencil (2nd generation) and Magic Keyboard, it transforms into a versatile canvas or a powerful workstation. iPadOS brings powerful new features designed for the unique capabilities of iPad. Fast Wi-Fi 6E and 5G cellular options keep you connected wherever you go.",
     price: 1099,
-    category: "Apple",
+    category: "Tablets",
     brand: "Apple",
     stock: 25,
     rating: 4.8,
-    images: [],
-    specs: { "Chip": "M2", "Screen": "12.9 inch" },
-    tags: ["tablet", "apple", "ipad", "ios"]
+    images: ["https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&q=80&w=800"],
+    specs: { "Chip": "M2", "Screen": "12.9 inch", "screen": "12.9-inch Liquid Retina XDR", "camera": "12MP Wide + 10MP Ultra Wide", "connectivity": "5G, Wi-Fi 6E" },
+    tags: ["tablet", "apple", "ipad", "ios", "creative", "mobile"]
   },
   {
     name: "AirPods Pro (2nd Gen)",
@@ -183,6 +198,38 @@ const products = [
     images: [],
     specs: { "Chip": "M3", "Screen": "15.3 inch" },
     tags: ["laptop", "apple", "macbook", "computer"]
+  },
+  {
+    name: "MacBook Pro 16",
+    price: 2499,
+    description: "The MacBook Pro 16-inch with M3 Max chip is a beast of a machine, designed for those who defy limits. With up to 22 hours of battery life, you can work all day on the most intensive projects. The Liquid Retina XDR display is the best ever in a laptop, featuring Extreme Dynamic Range and 1000 nits of sustained brightness. A wide array of ports, including HDMI, SDXC, and MagSafe 3, keeps you connected to everything you need. Whether you're editing 8K video, compiling complex code, or rendering 3D models, the MacBook Pro delivers performance that is simply in a class of its own.",
+    images: ["https://images.unsplash.com/photo-1517336714731-489689fd1ca4?auto=format&fit=crop&q=80&w=800"],
+    category: "Laptops",
+    brand: "Apple",
+    rating: 4.9,
+    specs: {
+      screen: "16.2-inch Liquid Retina XDR",
+      processor: "M3 Max",
+      ram: "36GB Unified Memory",
+      storage: "1TB SSD"
+    },
+    tags: ["laptop", "macbook", "pro", "creative"]
+  },
+  {
+    name: "DJI Osmo Mobile 6",
+    price: 149,
+    description: "Unleash your creativity with the DJI Osmo Mobile 6, an intelligent smartphone stabilizer packed with creative features. Its compact and foldable design makes it easy to take anywhere, and it launches automatically once unfolded to capture shots at a moment's notice. The built-in extension rod allows for dynamic angles and perfect selfies. With ActiveTrack 6.0, you can keep your subject in the center of the frame smoothly and reliably. A host of intelligent guides and one-tap editing features help you master every shot, from cinematic masterpieces to casual vlogs.",
+    images: ["https://images.unsplash.com/photo-1618418386376-745674395e38?auto=format&fit=crop&q=80&w=800"],
+    category: "Accessories",
+    brand: "DJI",
+    rating: 4.6,
+    specs: {
+      stabilization: "3-Axis",
+      battery: "6.4 Hours",
+      weight: "309g",
+      compatibility: "iOS & Android"
+    },
+    tags: ["gimbal", "video", "creator", "stabilizer"]
   },
 
   // ==========================
