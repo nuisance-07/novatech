@@ -6,6 +6,7 @@ import { Check } from "lucide-react";
 interface ProductConfiguratorProps {
     basePrice: number;
     onPriceChange: (price: number) => void;
+    onConfigChange: (config: { color: any; storage: any }) => void;
 }
 
 const COLORS = [
@@ -21,13 +22,14 @@ const STORAGE_OPTIONS = [
     { size: "1TB", price: 300 },
 ];
 
-export default function ProductConfigurator({ basePrice, onPriceChange }: ProductConfiguratorProps) {
+export default function ProductConfigurator({ basePrice, onPriceChange, onConfigChange }: ProductConfiguratorProps) {
     const [selectedColor, setSelectedColor] = useState(COLORS[0]);
     const [selectedStorage, setSelectedStorage] = useState(STORAGE_OPTIONS[0]);
 
     useEffect(() => {
         onPriceChange(basePrice + selectedStorage.price);
-    }, [selectedStorage, basePrice, onPriceChange]);
+        onConfigChange({ color: selectedColor, storage: selectedStorage });
+    }, [selectedStorage, selectedColor, basePrice, onPriceChange, onConfigChange]);
 
     return (
         <div className="space-y-8 py-8 border-t border-white/10">
@@ -58,8 +60,8 @@ export default function ProductConfigurator({ basePrice, onPriceChange }: Produc
                             key={option.size}
                             onClick={() => setSelectedStorage(option)}
                             className={`flex flex-col items-center justify-center p-4 rounded-xl border transition-all ${selectedStorage.size === option.size
-                                    ? "border-primary bg-primary/10 text-white"
-                                    : "border-white/10 bg-white/5 text-gray-400 hover:border-white/30"
+                                ? "border-primary bg-primary/10 text-white"
+                                : "border-white/10 bg-white/5 text-gray-400 hover:border-white/30"
                                 }`}
                         >
                             <span className="font-bold">{option.size}</span>

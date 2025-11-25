@@ -10,6 +10,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function ProductDetailsClient({ product, relatedProducts }: { product: any, relatedProducts: any[] }) {
     const [currentPrice, setCurrentPrice] = useState(product.price);
+    const [productConfig, setProductConfig] = useState<{ color: any; storage: any } | null>(null);
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
@@ -44,10 +45,16 @@ export default function ProductDetailsClient({ product, relatedProducts }: { pro
                         <ProductConfigurator
                             basePrice={product.price}
                             onPriceChange={setCurrentPrice}
+                            onConfigChange={setProductConfig}
                         />
 
                         <div className="pt-8 border-t border-white/10">
-                            <AddToCartButton product={{ ...product, price: currentPrice }} />
+                            <AddToCartButton product={{
+                                ...product,
+                                price: currentPrice,
+                                selectedColor: productConfig?.color,
+                                selectedStorage: productConfig?.storage
+                            }} />
                         </div>
 
                         {/* Tags */}

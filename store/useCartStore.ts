@@ -3,10 +3,13 @@ import { persist } from 'zustand/middleware';
 
 export interface CartItem {
   _id: string;
+  productId: string;
   name: string;
   price: number;
   image: string;
   quantity: number;
+  selectedColor?: string;
+  selectedStorage?: string;
 }
 
 interface CartState {
@@ -23,21 +26,29 @@ export const useCartStore = create<CartState>()(
     (set, get) => ({
       items: [],
       addItem: (product) => set((state) => {
-        const existing = state.items.find((i) => i._id === product._id);
+        // Generate a unique ID for the cart item based on product ID and selected options
+        const cartItemId = `${product._id}-${product.selectedColor?.name || ''}-${product.selectedStorage?.size || ''}`;
+
+        const existing = state.items.find((i) => i._id === cartItemId);
+
         if (existing) {
           return {
             items: state.items.map((i) =>
-              i._id === product._id ? { ...i, quantity: i.quantity + 1 } : i
+              i._id === cartItemId ? { ...i, quantity: i.quantity + 1 } : i
             ),
           };
         }
+
         return {
           items: [...state.items, {
-            _id: product._id,
+            _id: cartItemId,
+            productId: product._id,
             name: product.name,
             price: product.price,
             image: product.images[0],
-            quantity: 1
+            quantity: 1,
+            selectedColor: product.selectedColor?.name,
+            selectedStorage: product.selectedStorage?.size
           }]
         };
       }),
