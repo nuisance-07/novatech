@@ -7,7 +7,19 @@ const ProductSchema = new mongoose.Schema({
   images: [{ type: String }],
   category: {
     type: String,
-    enum: ['Phones', 'Laptops', 'Accessories', 'Smart Home', 'Wearables', 'Gaming', 'TVs', 'Audio'],
+    enum: [
+      'Samsung',
+      'Apple',
+      'Smartphones',
+      'Laptops',
+      'Accessories',
+      'Mobile Accessories',
+      'Audio',
+      'Gaming',
+      'Storage',
+      'Tablets',
+      'Content Creator Kit'
+    ],
     required: true
   },
   stock: { type: Number, default: 0 },
