@@ -23,28 +23,16 @@ export default function Home() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const res = await fetch('/api/products?featured=true');
-        // Fallback for demo if API isn't set up yet
-        if (!res.ok) {
-          // We'll rely on the seed data structure for the UI
-          // In a real app, this fetches from DB. 
-          // For now, we simulate a delay to show the skeleton or loading state
+        const res = await fetch('/api/products?latest=true');
+        if (res.ok) {
+          const data = await res.json();
+          setProducts(data);
         }
       } catch (e) {
         console.error(e);
       }
     }
-
-    // For this demo, we'll hardcode the "Featured" display using the seed logic 
-    // so the user sees the marquee immediately without needing the API route
-    setProducts([
-      { name: "iPhone 15 Pro Max", price: 1199, image: "https://images.unsplash.com/photo-1696446701796-da61225697cc?q=80&w=800&auto=format&fit=crop" },
-      { name: "PS5 Slim", price: 499, image: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=800&auto=format&fit=crop" },
-      { name: "MacBook Air", price: 1299, image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca4?q=80&w=800&auto=format&fit=crop" },
-      { name: "Samsung S24 Ultra", price: 1299, image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=800&auto=format&fit=crop" },
-      { name: "Sony XM5", price: 348, image: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=800&auto=format&fit=crop" },
-      { name: "Nintendo Switch", price: 349, image: "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=800&auto=format&fit=crop" },
-    ]);
+    fetchProducts();
   }, []);
 
   // 2. Cycle Videos
@@ -167,7 +155,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent p-10 flex flex-col justify-end">
               <h3 className="text-3xl font-bold text-white mb-2">Pro Gaming</h3>
               <p className="text-gray-300 mb-4">Consoles, Controllers & High-Refresh Monitors.</p>
-              <span className="text-primary font-medium flex items-center gap-2 group-hover:gap-4 transition-all">Shop Collection <ArrowRight size={16} /></span>
+              <Link href="/shop?category=Gaming" className="text-primary font-medium flex items-center gap-2 group-hover:gap-4 transition-all">Shop Collection <ArrowRight size={16} /></Link>
             </div>
           </div>
           <div className="relative h-[400px] rounded-3xl overflow-hidden group cursor-pointer border border-white/10">
@@ -180,9 +168,44 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent p-10 flex flex-col justify-end">
               <h3 className="text-3xl font-bold text-white mb-2">Audiophile</h3>
               <p className="text-gray-300 mb-4">Noise Cancelling Headphones & Spatial Audio.</p>
-              <span className="text-primary font-medium flex items-center gap-2 group-hover:gap-4 transition-all">Shop Collection <ArrowRight size={16} /></span>
+              <Link href="/shop?category=Audio" className="text-primary font-medium flex items-center gap-2 group-hover:gap-4 transition-all">Shop Collection <ArrowRight size={16} /></Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* --- LATEST DROPS --- */}
+      <section className="py-24 px-6 max-w-7xl mx-auto border-t border-white/5">
+        <div className="flex justify-between items-end mb-12">
+          <div>
+            <h2 className="text-4xl font-bold mb-4">Latest Drops</h2>
+            <p className="text-gray-400">Fresh from the lab. The newest tech in stock.</p>
+          </div>
+          <Link href="/shop" className="text-primary hover:text-white transition flex items-center gap-2">
+            View All <ArrowRight size={16} />
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {products.slice(0, 4).map((product, i) => (
+            <Link href={`/shop/${product._id}`} key={i} className="group block">
+              <div className="aspect-square relative rounded-2xl overflow-hidden mb-4 bg-white/5 border border-white/10">
+                <Image
+                  src={product.images ? product.images[0] : product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                {product.isFeatured && (
+                  <div className="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
+                    NEW
+                  </div>
+                )}
+              </div>
+              <h3 className="font-bold text-white text-lg mb-1 group-hover:text-primary transition-colors">{product.name}</h3>
+              <p className="text-gray-400">${product.price}</p>
+            </Link>
+          ))}
         </div>
       </section>
 

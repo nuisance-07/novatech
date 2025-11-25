@@ -8,13 +8,20 @@ export async function GET(request: Request) {
 
         const { searchParams } = new URL(request.url);
         const featured = searchParams.get('featured');
+        const latest = searchParams.get('latest');
 
         let query = {};
+        let sort = {};
+
         if (featured === 'true') {
             query = { isFeatured: true };
         }
 
-        const products = await Product.find(query);
+        if (latest === 'true') {
+            sort = { createdAt: -1 };
+        }
+
+        const products = await Product.find(query).sort(sort).limit(latest === 'true' ? 8 : 0);
 
         return NextResponse.json(products);
     } catch (error) {
