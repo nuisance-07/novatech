@@ -35,7 +35,7 @@ export async function POST(request: Request) {
             cancel_url: `${process.env.NEXT_PUBLIC_URL || "http://localhost:3000"}/cancel`,
         });
 
-        return NextResponse.json({ sessionId: session.id });
+        return NextResponse.json({ sessionId: session.id, url: session.url });
     } catch (error: any) {
         console.error("Stripe Checkout Error:", error);
         return NextResponse.json({ error: error.message }, { status: 500 });

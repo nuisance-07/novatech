@@ -7,7 +7,7 @@ export async function GET(request: Request) {
     try {
         const { searchParams } = new URL(request.url);
         const orderId = searchParams.get("id");
-        const { userId } = auth();
+        const { userId } = await auth();
 
         await connectDB();
 

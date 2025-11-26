@@ -4,7 +4,7 @@ import { useCartStore } from "@/store/useCartStore";
 import { Trash2, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { loadStripe } from "@stripe/stripe-js";
+
 import { useState } from "react";
 
 export default function CartPage() {
@@ -22,11 +22,10 @@ export default function CartPage() {
 
             const data = await response.json();
 
-            if (data.sessionId) {
-                const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
-                await stripe?.redirectToCheckout({ sessionId: data.sessionId });
+            if (data.url) {
+                window.location.href = data.url;
             } else {
-                console.error("Checkout failed:", data.error);
+                console.error("Checkout failed: No URL returned");
                 alert("Checkout failed. Please try again.");
             }
         } catch (error) {
