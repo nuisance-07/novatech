@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
+import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -33,16 +34,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
       <body className="font-sans bg-background text-white antialiased selection:bg-primary/30">
-        <QueryProvider>
-          <Navbar />
-          <CommandMenu />
-          <div className="pt-16">
-            {children}
-          </div>
-          <WhatsAppButton />
-          <NovaAssistant />
-          <Footer />
-        </QueryProvider>
+        <ClerkProvider> {/* Wrapped content with ClerkProvider */}
+          <QueryProvider>
+            <Navbar />
+            <CommandMenu />
+            <div className="pt-16">
+              {children}
+            </div>
+            <WhatsAppButton />
+            <NovaAssistant />
+            <Footer />
+          </QueryProvider>
+        </ClerkProvider>
       </body>
     </html>
   );

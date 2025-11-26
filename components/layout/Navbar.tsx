@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { ShoppingCart, Search, Menu, X } from "lucide-react";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { useState } from "react";
 import { useCartStore } from "@/store/useCartStore";
 import { SearchCommand } from "@/components/ui/SearchCommand";
@@ -30,32 +31,45 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-6">
+            <div className="hidden md:flex items-center gap-4">
+              <SignedOut>
+                <Link href="/sign-in" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
+                  Sign In
+                </Link>
+                <Link href="/sign-up" className="px-4 py-2 text-sm font-medium bg-white text-black rounded-full hover:bg-gray-200 transition-colors">
+                  Sign Up
+                </Link>
+              </SignedOut>
+              <SignedIn>
+                <UserButton afterSignOutUrl="/" />
+              </SignedIn>
+            </div>
+
+            <button
+              onClick={() => setIsSearchOpen(true)}
+              className="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-full hover:bg-white/5"
+            >
+              <Search className="h-5 w-5" />
+            </button>
+            <Link href="/cart" className="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-full hover:bg-white/5 relative">
+              <ShoppingCart className="h-5 w-5" />
+              {cartItemsCount > 0 && (
+                <span className="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
+                  {cartItemsCount}
+                </span>
+              )}
+            </Link>
+            <div className="-mr-2 flex md:hidden">
               <button
-                onClick={() => setIsSearchOpen(true)}
-                className="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-full hover:bg-white/5"
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-gray-400 hover:text-white p-2"
               >
-                <Search className="h-5 w-5" />
+                {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
-              <Link href="/cart" className="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-full hover:bg-white/5 relative">
-                <ShoppingCart className="h-5 w-5" />
-                {cartItemsCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
-                    {cartItemsCount}
-                  </span>
-                )}
-              </Link>
-              <div className="-mr-2 flex md:hidden">
-                <button
-                  onClick={() => setIsOpen(!isOpen)}
-                  className="text-gray-400 hover:text-white p-2"
-                >
-                  {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                </button>
-              </div>
             </div>
           </div>
         </div>
+
 
         {/* Mobile Menu */}
         {isOpen && (
@@ -68,7 +82,7 @@ export default function Navbar() {
             </div>
           </div>
         )}
-      </nav>
+      </nav >
       <SearchCommand open={isSearchOpen} setOpen={setIsSearchOpen} />
     </>
   );
