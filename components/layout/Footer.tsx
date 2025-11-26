@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Facebook, Twitter, Instagram, Linkedin, Github, Mail, MapPin, Phone } from "lucide-react";
+import NewsletterForm from "@/components/ui/NewsletterForm";
 
 export default function Footer() {
     return (
@@ -28,6 +29,12 @@ export default function Footer() {
                             <Link href="#" className="text-gray-400 hover:text-primary transition">
                                 <Github size={20} />
                             </Link>
+                        </div>
+
+                        <div className="pt-6">
+                            <h4 className="font-bold text-white mb-4">Stay Updated</h4>
+                            <p className="text-gray-400 text-sm mb-4">Subscribe to our newsletter for the latest tech drops.</p>
+                            <NewsletterForm />
                         </div>
                     </div>
 
