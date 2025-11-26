@@ -22,7 +22,6 @@ export async function chatWithNova(history: { role: "user" | "model"; parts: str
         const products = await Product.find({})
             .select("name category price description _id")
             .sort({ createdAt: -1 })
-            .limit(20)
             .lean();
 
         const productContext = products.map(p =>
