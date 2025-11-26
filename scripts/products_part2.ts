@@ -10,7 +10,10 @@ export const productsPart2 = [
         brand: "Casetify",
         stock: 200,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1601593346740-925612772716?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1541877944-ac82a091518a?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Drop Protection": "6.6ft", "Material": "EcoShock" },
         tags: ["accessory", "case", "phone"]
     },
@@ -22,7 +25,10 @@ export const productsPart2 = [
         brand: "Spigen",
         stock: 300,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1586105251261-72a756497a11?q=80&w=2058&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1601593346740-925612772716?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Material": "TPU + PC", "Clarity": "Long-lasting" },
         tags: ["accessory", "case", "value"]
     },
@@ -34,7 +40,10 @@ export const productsPart2 = [
         brand: "Anker",
         stock: 150,
         rating: 4.9,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Power": "65W", "Tech": "GaN II" },
         tags: ["accessory", "charger", "fast"]
     },
@@ -46,7 +55,10 @@ export const productsPart2 = [
         brand: "Apple",
         stock: 80,
         rating: 4.5,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1586816879360-004f5b0c51e3?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Capacity": "1460mAh", "Type": "Magnetic" },
         tags: ["accessory", "powerbank", "apple"]
     },
@@ -58,7 +70,10 @@ export const productsPart2 = [
         brand: "PopSockets",
         stock: 250,
         rating: 4.6,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1586816879360-004f5b0c51e3?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Mount": "MagSafe", "Function": "Grip/Stand" },
         tags: ["accessory", "grip", "phone"]
     },
@@ -70,7 +85,10 @@ export const productsPart2 = [
         brand: "Nomad",
         stock: 60,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1601593346740-925612772716?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1541877944-ac82a091518a?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Material": "Leather", "MagSafe": "Yes" },
         tags: ["accessory", "case", "premium"]
     },
@@ -82,7 +100,10 @@ export const productsPart2 = [
         brand: "Anker",
         stock: 100,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Capacity": "5000mAh", "Stand": "Yes" },
         tags: ["accessory", "powerbank", "maggo"]
     },
@@ -94,7 +115,10 @@ export const productsPart2 = [
         brand: "Samsung",
         stock: 120,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Power": "45W", "Port": "USB-C" },
         tags: ["accessory", "charger", "samsung"]
     },
@@ -106,7 +130,10 @@ export const productsPart2 = [
         brand: "DJI",
         stock: 40,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Axis": "3-Axis", "Feature": "ActiveTrack 6.0" },
         tags: ["accessory", "gimbal", "video"]
     },
@@ -118,7 +145,10 @@ export const productsPart2 = [
         brand: "RhinoShield",
         stock: 150,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1601593346740-925612772716?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1541877944-ac82a091518a?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Material": "ShockSpread", "Customizable": "Yes" },
         tags: ["accessory", "case", "durable"]
     },
@@ -134,7 +164,10 @@ export const productsPart2 = [
         brand: "Sony",
         stock: 80,
         rating: 4.9,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=2088&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=2084&auto=format&fit=crop"
+        ],
         specs: { "ANC": "Yes", "Battery": "30 Hours" },
         tags: ["audio", "headphones", "sony"]
     },
@@ -146,7 +179,10 @@ export const productsPart2 = [
         brand: "Bose",
         stock: 60,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=2065&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Audio": "Spatial", "Comfort": "Premium" },
         tags: ["audio", "headphones", "bose"]
     },
@@ -158,7 +194,10 @@ export const productsPart2 = [
         brand: "Sennheiser",
         stock: 50,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Battery": "60 Hours", "Sound": "Audiophile" },
         tags: ["audio", "headphones", "sennheiser"]
     },
@@ -170,7 +209,10 @@ export const productsPart2 = [
         brand: "JBL",
         stock: 150,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=2036&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1589256469067-ea99122bbdc4?q=80&w=2031&auto=format&fit=crop"
+        ],
         specs: { "Waterproof": "IP67", "Battery": "12 Hours" },
         tags: ["audio", "speaker", "jbl"]
     },
@@ -182,7 +224,10 @@ export const productsPart2 = [
         brand: "Sonos",
         stock: 40,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=2066&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=2080&auto=format&fit=crop"
+        ],
         specs: { "Connectivity": "WiFi/BT", "Voice": "Alexa/Sonos" },
         tags: ["audio", "speaker", "home"]
     },
@@ -194,7 +239,10 @@ export const productsPart2 = [
         brand: "Marshall",
         stock: 70,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1627989580309-bfaf3e58af6f?q=80&w=2072&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1528148343865-51218c4a13e6?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Style": "Retro", "Battery": "30+ Hours" },
         tags: ["audio", "speaker", "stylish"]
     },
@@ -206,7 +254,10 @@ export const productsPart2 = [
         brand: "Sony",
         stock: 90,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=2032&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "ANC": "Best-in-class", "Size": "Compact" },
         tags: ["audio", "earbuds", "sony"]
     },
@@ -218,7 +269,10 @@ export const productsPart2 = [
         brand: "Nothing",
         stock: 60,
         rating: 4.6,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1631867675167-90a456a90863?q=80&w=2079&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1606220838315-056192d5e927?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Design": "Transparent", "Codec": "LHDC 5.0" },
         tags: ["audio", "earbuds", "unique"]
     },
@@ -230,7 +284,10 @@ export const productsPart2 = [
         brand: "Bose",
         stock: 20,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=2066&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=2080&auto=format&fit=crop"
+        ],
         specs: { "Audio": "Dolby Atmos", "Voice": "Alexa/Google" },
         tags: ["audio", "soundbar", "home-theater"]
     },
@@ -242,7 +299,10 @@ export const productsPart2 = [
         brand: "Logitech",
         stock: 40,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=2032&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=2084&auto=format&fit=crop"
+        ],
         specs: { "Pattern": "4-Capsule", "Metering": "LED" },
         tags: ["audio", "microphone", "streaming"]
     },
@@ -259,7 +319,10 @@ export const productsPart2 = [
         stock: 100,
         rating: 4.9,
         isFeatured: true,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?q=80&w=2027&auto=format&fit=crop"
+        ],
         specs: { "Storage": "1TB SSD", "Output": "4K 120Hz" },
         tags: ["gaming", "console", "ps5"]
     },
@@ -271,7 +334,10 @@ export const productsPart2 = [
         brand: "Microsoft",
         stock: 80,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1621259182902-5b8340fdd585?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1605901309584-818e25960b8f?q=80&w=2087&auto=format&fit=crop"
+        ],
         specs: { "Performance": "12 TFLOPS", "Storage": "1TB SSD" },
         tags: ["gaming", "console", "xbox"]
     },
@@ -283,7 +349,10 @@ export const productsPart2 = [
         brand: "Nintendo",
         stock: 120,
         rating: 4.9,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1648454840735-a99071006096?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Screen": "7-inch OLED", "Mode": "Handheld/TV" },
         tags: ["gaming", "console", "nintendo"]
     },
@@ -295,7 +364,10 @@ export const productsPart2 = [
         brand: "Valve",
         stock: 40,
         rating: 4.9,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1655562723793-45543c727192?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1655562724283-7d7293527234?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Screen": "HDR OLED", "Battery": "Longer Life" },
         tags: ["gaming", "handheld", "pc"]
     },
@@ -307,7 +379,10 @@ export const productsPart2 = [
         brand: "ASUS",
         stock: 50,
         rating: 4.6,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1685647565759-45922312683d?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1685647565759-45922312683d?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Chip": "Ryzen Z1 Extreme", "Screen": "120Hz" },
         tags: ["gaming", "handheld", "windows"]
     },
@@ -319,7 +394,10 @@ export const productsPart2 = [
         brand: "Sony",
         stock: 60,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1592840496011-8b3412a13903?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Customizable": "Yes", "Paddles": "Back Buttons" },
         tags: ["gaming", "controller", "pro"]
     },
@@ -331,7 +409,10 @@ export const productsPart2 = [
         brand: "Microsoft",
         stock: 50,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1592840496011-8b3412a13903?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Battery": "40 Hours", "Customizable": "Yes" },
         tags: ["gaming", "controller", "pro"]
     },
@@ -343,7 +424,10 @@ export const productsPart2 = [
         brand: "SteelSeries",
         stock: 40,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1610041321327-b794c052db27?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Audio": "Hi-Res", "System": "Multi-System" },
         tags: ["gaming", "headset", "wireless"]
     },
@@ -355,7 +439,10 @@ export const productsPart2 = [
         brand: "Logitech",
         stock: 80,
         rating: 4.9,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Weight": "60g", "Sensor": "HERO 2" },
         tags: ["gaming", "mouse", "esports"]
     },
@@ -367,7 +454,10 @@ export const productsPart2 = [
         brand: "Razer",
         stock: 60,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1610041321327-b794c052db27?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1599669454699-248893623440?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Mic": "Super Wideband", "Audio": "THX" },
         tags: ["gaming", "headset", "razer"]
     },
@@ -383,7 +473,10 @@ export const productsPart2 = [
         brand: "Samsung",
         stock: 100,
         rating: 4.9,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Speed": "7450MB/s", "Interface": "PCIe 4.0" },
         tags: ["storage", "ssd", "nvme"]
     },
@@ -395,7 +488,10 @@ export const productsPart2 = [
         brand: "Western Digital",
         stock: 80,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Speed": "7300MB/s", "Heatsink": "Optional" },
         tags: ["storage", "ssd", "gaming"]
     },
@@ -407,7 +503,10 @@ export const productsPart2 = [
         brand: "SanDisk",
         stock: 200,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1592155931584-901ac15763e3?q=80&w=2075&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1562907550-096d3bf9b25c?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Speed": "200MB/s", "Class": "V30" },
         tags: ["storage", "sdcard", "camera"]
     },
@@ -419,7 +518,10 @@ export const productsPart2 = [
         brand: "Samsung",
         stock: 60,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Speed": "2000MB/s", "Portable": "Yes" },
         tags: ["storage", "ssd", "external"]
     },
@@ -431,7 +533,10 @@ export const productsPart2 = [
         brand: "Seagate",
         stock: 40,
         rating: 4.6,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1531492746076-a61b643c258c?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1544652478-6653e09f1826?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "RPM": "7200", "Cache": "256MB" },
         tags: ["storage", "hdd", "nas"]
     },
@@ -443,7 +548,10 @@ export const productsPart2 = [
         brand: "Western Digital",
         stock: 30,
         rating: 4.5,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1531492746076-a61b643c258c?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1544652478-6653e09f1826?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Type": "External HDD", "Power": "AC Adapter" },
         tags: ["storage", "hdd", "backup"]
     },
@@ -455,7 +563,10 @@ export const productsPart2 = [
         brand: "Kingston",
         stock: 50,
         rating: 4.6,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Speed": "2000MB/s", "Size": "Tiny" },
         tags: ["storage", "ssd", "portable"]
     },
@@ -467,7 +578,10 @@ export const productsPart2 = [
         brand: "Lexar",
         stock: 20,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1592155931584-901ac15763e3?q=80&w=2075&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1562907550-096d3bf9b25c?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Type": "Type B", "Speed": "1750MB/s" },
         tags: ["storage", "card", "pro"]
     },
@@ -479,7 +593,10 @@ export const productsPart2 = [
         brand: "Samsung",
         stock: 150,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1592155931584-901ac15763e3?q=80&w=2075&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1562907550-096d3bf9b25c?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Class": "A2", "Adapter": "Included" },
         tags: ["storage", "microsd", "android"]
     },
@@ -491,7 +608,10 @@ export const productsPart2 = [
         brand: "Crucial",
         stock: 60,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Speed": "1050MB/s", "Durability": "IP55" },
         tags: ["storage", "ssd", "portable"]
     },
@@ -507,7 +627,10 @@ export const productsPart2 = [
         brand: "Samsung",
         stock: 40,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Screen": "12.4 inch", "Processor": "Snapdragon 8 Gen 2" },
         tags: ["tablet", "samsung", "android"]
     },
@@ -519,7 +642,10 @@ export const productsPart2 = [
         brand: "Apple",
         stock: 60,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=2015&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Chip": "M1", "Screen": "10.9 inch" },
         tags: ["tablet", "apple", "ipad"]
     },
@@ -531,7 +657,10 @@ export const productsPart2 = [
         brand: "Apple",
         stock: 50,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=2015&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Chip": "A15 Bionic", "Screen": "8.3 inch" },
         tags: ["tablet", "apple", "compact"]
     },
@@ -543,7 +672,10 @@ export const productsPart2 = [
         brand: "Microsoft",
         stock: 35,
         rating: 4.6,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=2015&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "OS": "Windows 11", "Kickstand": "Built-in" },
         tags: ["tablet", "windows", "productivity"]
     },
@@ -555,7 +687,10 @@ export const productsPart2 = [
         brand: "Lenovo",
         stock: 50,
         rating: 4.5,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Screen": "12.7 inch", "Speakers": "JBL" },
         tags: ["tablet", "lenovo", "android"]
     },
@@ -567,7 +702,10 @@ export const productsPart2 = [
         brand: "Amazon",
         stock: 80,
         rating: 4.4,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Screen": "11 inch", "Body": "Aluminum" },
         tags: ["tablet", "amazon", "budget"]
     },
@@ -579,7 +717,10 @@ export const productsPart2 = [
         brand: "Xiaomi",
         stock: 60,
         rating: 4.6,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Chip": "Snapdragon 870", "Charging": "33W" },
         tags: ["tablet", "xiaomi", "android"]
     },
@@ -591,7 +732,10 @@ export const productsPart2 = [
         brand: "OnePlus",
         stock: 30,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Refresh": "144Hz", "Battery": "1 Month Standby" },
         tags: ["tablet", "oneplus", "android"]
     },
@@ -603,7 +747,10 @@ export const productsPart2 = [
         brand: "Google",
         stock: 40,
         rating: 4.5,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Chip": "Tensor G2", "Dock": "Included" },
         tags: ["tablet", "google", "smart-home"]
     },
@@ -615,7 +762,10 @@ export const productsPart2 = [
         brand: "Modio",
         stock: 100,
         rating: 4.2,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Screen": "7 inch", "Case": "Rugged" },
         tags: ["tablet", "kids", "budget"]
     },
@@ -625,121 +775,151 @@ export const productsPart2 = [
     // ==========================
     {
         name: "DJI Mini 4 Pro",
-        description: "Go big with Mini. 4K/60fps HDR video.",
+        description: "Mini to the Max. 4K/60fps HDR video. Omnidirectional sensing.",
         price: 759,
         category: "Content Creator Kit",
         brand: "DJI",
-        stock: 30,
-        rating: 4.9,
-        images: [],
+        stock: 25,
+        rating: 4.8,
+        images: [
+            "https://images.unsplash.com/photo-1579829366248-204fe8413f31?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1579829366248-204fe8413f31?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Weight": "<249g", "Obstacle Sensing": "Omni" },
         tags: ["creator", "drone", "dji"]
     },
     {
         name: "GoPro HERO12 Black",
-        description: "Incredible image quality. HyperSmooth 6.0 stabilization.",
+        description: "Incredible image quality. Even better HyperSmooth video stabilization.",
         price: 399,
         category: "Content Creator Kit",
         brand: "GoPro",
-        stock: 50,
+        stock: 60,
         rating: 4.7,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1565849904461-04a28ad377e0?q=80&w=2072&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1565849904461-04a28ad377e0?q=80&w=2072&auto=format&fit=crop"
+        ],
         specs: { "Video": "5.3K", "Waterproof": "33ft" },
         tags: ["creator", "camera", "action"]
     },
     {
-        name: "Insta360 X3",
-        description: "Magic in action. 5.7K 360-degree capture.",
-        price: 449,
+        name: "Aputure MC RGBWW",
+        description: "Mini LED light. Full color control. Magnetic mounting.",
+        price: 90,
         category: "Content Creator Kit",
-        brand: "Insta360",
-        stock: 40,
+        brand: "Aputure",
+        stock: 50,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop"
+        ],
         specs: { "Video": "360", "Reframing": "AI" },
         tags: ["creator", "camera", "360"]
     },
     {
         name: "DJI Osmo Pocket 3",
-        description: "For moving moments. 1-inch CMOS sensor and 4K/120fps.",
+        description: "For moving moments. 1-inch CMOS sensor. 4K/120fps.",
         price: 519,
         category: "Content Creator Kit",
         brand: "DJI",
-        stock: 25,
+        stock: 35,
         rating: 4.9,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Sensor": "1-inch", "Stabilization": "3-Axis" },
         tags: ["creator", "camera", "vlog"]
     },
     {
-        name: "Sony ZV-E10",
-        description: "Interchangeable-lens vlog camera. Large APS-C sensor.",
-        price: 699,
+        name: "Sony Alpha a7 IV",
+        description: "The hybrid camera for creators. 33MP full-frame sensor.",
+        price: 2498,
         category: "Content Creator Kit",
         brand: "Sony",
-        stock: 20,
-        rating: 4.7,
-        images: [],
+        stock: 15,
+        rating: 4.9,
+        images: [
+            "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2000&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2000&auto=format&fit=crop"
+        ],
         specs: { "Sensor": "APS-C", "Focus": "Real-time Eye AF" },
         tags: ["creator", "camera", "vlog"]
     },
     {
-        name: "Rode Wireless Pro",
-        description: "The ultimate wireless microphone system. 32-bit float recording.",
+        name: "Rode Wireless PRO",
+        description: "The most powerful compact wireless microphone system ever.",
         price: 399,
         category: "Content Creator Kit",
         brand: "Rode",
-        stock: 30,
+        stock: 40,
         rating: 4.9,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=2032&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=2032&auto=format&fit=crop"
+        ],
         specs: { "Range": "260m", "Recording": "Onboard" },
         tags: ["creator", "audio", "mic"]
     },
     {
         name: "Neewer Ring Light Kit",
-        description: "Professional lighting for streaming and makeup.",
+        description: "18-inch dimmable LED ring light. Stand included.",
         price: 89,
         category: "Content Creator Kit",
         brand: "Neewer",
-        stock: 60,
-        rating: 4.5,
-        images: [],
+        stock: 100,
+        rating: 4.6,
+        images: [
+            "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop"
+        ],
         specs: { "Size": "18 inch", "Stand": "Included" },
         tags: ["creator", "lighting", "studio"]
     },
     {
-        name: "Elgato Key Light Air",
-        description: "Professional Wi-Fi enabled lighting panel.",
-        price: 129,
+        name: "Elgato Key Light",
+        description: "Professional studio lighting. App-enabled. Desk mount included.",
+        price: 199,
         category: "Content Creator Kit",
         brand: "Elgato",
-        stock: 40,
-        rating: 4.7,
-        images: [],
+        stock: 30,
+        rating: 4.8,
+        images: [
+            "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop"
+        ],
         specs: { "Control": "App", "Temp": "Adjustable" },
         tags: ["creator", "lighting", "streaming"]
     },
     {
         name: "Joby GorillaPod 3K",
-        description: "Flexible tripod for cameras up to 3kg.",
+        description: "Flexible tripod for DSLR and Mirrorless cameras.",
         price: 49,
         category: "Content Creator Kit",
         brand: "Joby",
-        stock: 100,
-        rating: 4.6,
-        images: [],
+        stock: 80,
+        rating: 4.7,
+        images: [
+            "https://images.unsplash.com/photo-1516724562728-afc824a36e84?q=80&w=2071&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1516724562728-afc824a36e84?q=80&w=2071&auto=format&fit=crop"
+        ],
         specs: { "Legs": "Flexible", "Head": "Ballhead" },
         tags: ["creator", "tripod", "flexible"]
     },
     {
-        name: "SanDisk Extreme Portable SSD 1TB",
-        description: "Fast storage for editing on the go.",
-        price: 99,
+        name: "SanDisk Extreme Portable SSD 4TB",
+        description: "High-capacity, high-speed storage for 4K footage.",
+        price: 299,
         category: "Content Creator Kit",
         brand: "SanDisk",
-        stock: 80,
+        stock: 30,
         rating: 4.8,
-        images: [],
+        images: [
+            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+        ],
         specs: { "Speed": "1050MB/s", "Rugged": "Yes" },
         tags: ["creator", "storage", "ssd"]
     }
