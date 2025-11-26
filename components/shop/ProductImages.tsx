@@ -16,7 +16,7 @@ export default function ProductImages({ images, name }: { images: string[], name
                 onClick={() => setOpen(true)}
             >
                 <Image
-                    src={images[0]}
+                    src={images && images.length > 0 ? images[0] : "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop"}
                     alt={name}
                     fill
                     className="object-cover"

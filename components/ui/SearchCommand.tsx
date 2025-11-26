@@ -104,12 +104,19 @@ export function SearchCommand({ open, setOpen }: SearchCommandProps) {
                                 className="flex items-center gap-4 p-3 rounded-lg hover:bg-white/5 cursor-pointer group transition-colors"
                             >
                                 <div className="relative w-12 h-12 rounded-md overflow-hidden bg-white/5 flex-shrink-0">
-                                    {product.images?.[0] && (
+                                    {product.images?.[0] ? (
                                         <Image
                                             src={product.images[0]}
                                             alt={product.name}
                                             fill
                                             className="object-cover"
+                                        />
+                                    ) : (
+                                        <Image
+                                            src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop"
+                                            alt={product.name}
+                                            fill
+                                            className="object-cover grayscale opacity-50"
                                         />
                                     )}
                                 </div>

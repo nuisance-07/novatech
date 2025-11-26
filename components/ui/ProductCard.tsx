@@ -48,9 +48,12 @@ export default function ProductCard({ product }: { product: any }) {
               className="object-cover transition-transform duration-500 group-hover:scale-110"
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center bg-white/5 text-gray-500">
-              No Image
-            </div>
+            <Image
+              src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop"
+              alt={product.name}
+              fill
+              className="object-cover grayscale opacity-50"
+            />
           )}
         </Link>
 

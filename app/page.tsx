@@ -116,7 +116,7 @@ export default function Home() {
               <div key={i} className="w-[300px] mx-4 shrink-0 group cursor-pointer">
                 <div className="aspect-[4/5] relative rounded-2xl overflow-hidden mb-4 bg-white/5 border border-white/10">
                   <Image
-                    src={product.image}
+                    src={product.images && product.images.length > 0 ? product.images[0] : (product.image || "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop")}
                     alt={product.name}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
