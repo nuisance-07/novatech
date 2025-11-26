@@ -90,8 +90,8 @@ export default function OrdersPage() {
                                     <div>
                                         <p className="text-sm text-gray-400 mb-1">Status</p>
                                         <span className={`px-3 py-1 rounded-full text-xs font-bold ${order.status === "Delivered" ? "bg-green-500/20 text-green-400" :
-                                                order.status === "Shipped" ? "bg-blue-500/20 text-blue-400" :
-                                                    "bg-yellow-500/20 text-yellow-400"
+                                            order.status === "Shipped" ? "bg-blue-500/20 text-blue-400" :
+                                                "bg-yellow-500/20 text-yellow-400"
                                             }`}>
                                             {order.status}
                                         </span>
