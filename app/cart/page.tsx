@@ -4,9 +4,38 @@ import { useCartStore } from "@/store/useCartStore";
 import { Trash2, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { loadStripe } from "@stripe/stripe-js";
+import { useState } from "react";
 
 export default function CartPage() {
     const { items, removeItem, total } = useCartStore();
+    const [loading, setLoading] = useState(false);
+
+    const handleCheckout = async () => {
+        setLoading(true);
+        try {
+            const response = await fetch("/api/checkout", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ items }),
+            });
+
+            const data = await response.json();
+
+            if (data.sessionId) {
+                const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
+                await stripe?.redirectToCheckout({ sessionId: data.sessionId });
+            } else {
+                console.error("Checkout failed:", data.error);
+                alert("Checkout failed. Please try again.");
+            }
+        } catch (error) {
+            console.error("Checkout error:", error);
+            alert("An error occurred. Please try again.");
+        } finally {
+            setLoading(false);
+        }
+    };
 
     if (items.length === 0) {
         return (
@@ -75,8 +104,12 @@ export default function CartPage() {
                             </div>
                         </div>
 
-                        <button className="w-full py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary-hover transition flex items-center justify-center gap-2 mb-6">
-                            Checkout <ArrowRight size={18} />
+                        <button
+                            onClick={handleCheckout}
+                            disabled={loading}
+                            className="w-full py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary-hover transition flex items-center justify-center gap-2 mb-6 disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            {loading ? "Processing..." : "Checkout"} <ArrowRight size={18} />
                         </button>
 
                         <div className="space-y-4">

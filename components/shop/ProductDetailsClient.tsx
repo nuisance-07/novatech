@@ -6,11 +6,15 @@ import ProductCard from "@/components/ui/ProductCard";
 import ProductImages from "@/components/shop/ProductImages";
 import AddToCartButton from "@/components/shop/AddToCartButton";
 import ProductConfigurator from "@/components/shop/ProductConfigurator";
+import WishlistButton from "@/components/shop/WishlistButton";
+import ReviewList from "@/components/shop/ReviewList";
+import ReviewForm from "@/components/shop/ReviewForm";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function ProductDetailsClient({ product, relatedProducts }: { product: any, relatedProducts: any[] }) {
     const [currentPrice, setCurrentPrice] = useState(product.price);
     const [productConfig, setProductConfig] = useState<{ color: any; storage: any } | null>(null);
+    const [refreshReviews, setRefreshReviews] = useState(0);
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
@@ -48,13 +52,14 @@ export default function ProductDetailsClient({ product, relatedProducts }: { pro
                             onConfigChange={setProductConfig}
                         />
 
-                        <div className="pt-8 border-t border-white/10">
+                        <div className="pt-8 border-t border-white/10 flex items-center gap-4">
                             <AddToCartButton product={{
                                 ...product,
                                 price: currentPrice,
                                 selectedColor: productConfig?.color,
                                 selectedStorage: productConfig?.storage
                             }} />
+                            <WishlistButton product={product} className="w-12 h-12 p-3 bg-white/5 hover:bg-white/10" />
                         </div>
 
                         {/* Tags */}
@@ -99,6 +104,18 @@ export default function ProductDetailsClient({ product, relatedProducts }: { pro
                     </div>
                 </FadeIn>
             )}
+            {/* Reviews Section */}
+            <div className="max-w-4xl mx-auto px-4 mb-24">
+                <h2 className="text-3xl font-heading font-bold mb-12 text-center">Customer Reviews</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <ReviewForm productId={product._id} onReviewSubmitted={() => setRefreshReviews(prev => prev + 1)} />
+                    </div>
+                    <div>
+                        <ReviewList productId={product._id} refreshTrigger={refreshReviews} />
+                    </div>
+                </div>
+            </div>
         </>
     );
 }

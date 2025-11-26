@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useCartStore } from "@/store/useCartStore";
 import { useCompareStore } from "@/store/useCompareStore";
 import { BarChart2, Check, ShoppingBag, Plus } from "lucide-react";
+import WishlistButton from "@/components/shop/WishlistButton";
 
 export default function ProductCard({ product }: { product: any }) {
   const addItem = useCartStore((state) => state.addItem);
@@ -58,13 +59,14 @@ export default function ProductCard({ product }: { product: any }) {
           <button
             onClick={toggleCompare}
             className={`p-2 rounded-full backdrop-blur-md transition-colors duration-300 ${isInCompare
-                ? "bg-primary text-white"
-                : "bg-black/50 text-white hover:bg-primary"
+              ? "bg-primary text-white"
+              : "bg-black/50 text-white hover:bg-primary"
               }`}
             title={isInCompare ? "Remove from Compare" : "Add to Compare"}
           >
             {isInCompare ? <Check size={18} /> : <BarChart2 size={18} />}
           </button>
+          <WishlistButton product={product} className="bg-black/50 hover:bg-white hover:text-black" />
         </div>
       </div>
 
