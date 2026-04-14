@@ -5,19 +5,19 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ArrowRight, ShoppingBag, Star } from "lucide-react";
 
-// --- BACKGROUND VIDEOS ---
-// Using reliable CDN-hosted tech footage
-const HERO_VIDEOS = [
-  "https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4",
-  "https://cdn.pixabay.com/video/2024/02/11/200321-912272992_large.mp4",
-  "https://cdn.pixabay.com/video/2021/08/20/85588-589813427_large.mp4",
-  "https://cdn.pixabay.com/video/2020/02/04/31950-389835452_large.mp4",
-  "https://cdn.pixabay.com/video/2023/09/08/180285-862224683_large.mp4"
+// --- BACKGROUND HERO ASSETS ---
+// Using reliable high-quality Unsplash tech imagery
+const HERO_IMAGES = [
+  "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2000&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2000&auto=format&fit=crop"
 ];
 
 export default function Home() {
   const [products, setProducts] = useState<any[]>([]);
-  const [currentVideo, setCurrentVideo] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
   // 1. Fetch Products
@@ -38,33 +38,37 @@ export default function Home() {
     fetchProducts();
   }, []);
 
-  // 2. Cycle Videos
+  // 2. Cycle Slides
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentVideo((prev) => (prev + 1) % HERO_VIDEOS.length);
-    }, 8000); // Change every 8 seconds
+      setCurrentSlide((prev) => (prev + 1) % HERO_IMAGES.length);
+    }, 6000); // Change every 6 seconds
     return () => clearInterval(timer);
   }, []);
 
   return (
     <main className="min-h-screen bg-black overflow-x-hidden">
 
-      {/* --- HERO SECTION WITH VIDEO BACKGROUND --- */}
+      {/* --- HERO SECTION WITH CINEMATIC BACKGROUND --- */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Video Layer */}
+        {/* Background Layers */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-black/60 z-10" /> {/* Overlay for readability */}
-          {HERO_VIDEOS.map((src, index) => (
-            <video
+          <div className="absolute inset-0 bg-black/60 z-10" />
+          {HERO_IMAGES.map((src, index) => (
+            <div
               key={src}
-              src={src}
-              autoPlay
-              muted
-              loop
-              playsInline
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentVideo ? "opacity-100" : "opacity-0"
+              className={`absolute inset-0 transition-opacity duration-[2000ms] ease-in-out ${index === currentSlide ? "opacity-100 z-0" : "opacity-0 -z-10"
                 }`}
-            />
+            >
+              <Image
+                src={src}
+                alt="Tech Background"
+                fill
+                priority={index === 0}
+                className={`object-cover ${index === currentSlide ? "animate-ken-burns" : ""
+                  }`}
+              />
+            </div>
           ))}
         </div>
 

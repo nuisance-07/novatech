@@ -36,11 +36,16 @@ const config: Config = {
       },
       animation: {
         'scroll': 'scroll 40s linear infinite',
+        'ken-burns': 'ken-burns 20s ease-out infinite alternate',
       },
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
+        },
+        'ken-burns': {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.1)' },
         }
       }
     },
