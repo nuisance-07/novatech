@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Check } from "lucide-react";
 
 interface ProductConfiguratorProps {
@@ -26,10 +26,16 @@ export default function ProductConfigurator({ basePrice, onPriceChange, onConfig
     const [selectedColor, setSelectedColor] = useState(COLORS[0]);
     const [selectedStorage, setSelectedStorage] = useState(STORAGE_OPTIONS[0]);
 
+    // Use refs to avoid infinite re-render loop from unstable callback references
+    const onPriceChangeRef = useRef(onPriceChange);
+    const onConfigChangeRef = useRef(onConfigChange);
+    useEffect(() => { onPriceChangeRef.current = onPriceChange; }, [onPriceChange]);
+    useEffect(() => { onConfigChangeRef.current = onConfigChange; }, [onConfigChange]);
+
     useEffect(() => {
-        onPriceChange(basePrice + selectedStorage.price);
-        onConfigChange({ color: selectedColor, storage: selectedStorage });
-    }, [selectedStorage, selectedColor, basePrice, onPriceChange, onConfigChange]);
+        onPriceChangeRef.current(basePrice + selectedStorage.price);
+        onConfigChangeRef.current({ color: selectedColor, storage: selectedStorage });
+    }, [selectedStorage, selectedColor, basePrice]);
 
     return (
         <div className="space-y-8 py-8 border-t border-white/10">

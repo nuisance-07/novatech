@@ -9,6 +9,8 @@ const CATEGORIES = [
     "Samsung",
     "Apple",
     "Smartphones",
+    "Laptops",
+    "Accessories",
     "Mobile Accessories",
     "Audio",
     "Gaming",

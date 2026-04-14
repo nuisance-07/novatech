@@ -18,6 +18,7 @@ const HERO_VIDEOS = [
 export default function Home() {
   const [products, setProducts] = useState<any[]>([]);
   const [currentVideo, setCurrentVideo] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
   // 1. Fetch Products
   useEffect(() => {
@@ -30,6 +31,8 @@ export default function Home() {
         }
       } catch (e) {
         console.error(e);
+      } finally {
+        setIsLoading(false);
       }
     }
     fetchProducts();
@@ -104,42 +107,58 @@ export default function Home() {
           <h2 className="text-sm font-bold text-primary tracking-[0.2em] uppercase">Trending Now</h2>
         </div>
 
-        {/* The Scrolling Container */}
-        <div className="relative w-full">
-          {/* Left/Right Fade Masks */}
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-surface to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-surface to-transparent z-10" />
-
-          <div className="flex w-max animate-scroll hover:[animation-play-state:paused]">
-            {/* We duplicate the products list twice to create a seamless loop */}
-            {[...products, ...products, ...products].map((product, i) => (
-              <div key={i} className="w-[300px] mx-4 shrink-0 group cursor-pointer">
-                <div className="aspect-[4/5] relative rounded-2xl overflow-hidden mb-4 bg-white/5 border border-white/10">
-                  <Image
-                    src={product.images && product.images.length > 0 ? product.images[0] : (product.image || "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop")}
-                    alt={product.name}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <button className="bg-white text-black px-6 py-2 rounded-full font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                      View Details
-                    </button>
-                  </div>
-                </div>
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h3 className="font-bold text-white text-lg">{product.name}</h3>
-                    <div className="flex gap-1 text-yellow-500 mt-1">
-                      {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" />)}
-                    </div>
-                  </div>
-                  <span className="text-primary font-bold text-lg">${product.price}</span>
-                </div>
+        {isLoading ? (
+          <div className="flex gap-4 px-4 overflow-hidden">
+            {[...Array(5)].map((_, i) => (
+              <div key={i} className="w-[300px] mx-4 shrink-0">
+                <div className="aspect-[4/5] rounded-2xl bg-white/5 animate-pulse mb-4" />
+                <div className="h-4 w-3/4 bg-white/5 rounded animate-pulse mb-2" />
+                <div className="h-4 w-1/4 bg-white/5 rounded animate-pulse" />
               </div>
             ))}
           </div>
-        </div>
+        ) : products.length > 0 ? (
+          <div className="relative w-full">
+            {/* Left/Right Fade Masks */}
+            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-surface to-transparent z-10" />
+            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-surface to-transparent z-10" />
+
+            <div className="flex w-max animate-scroll hover:[animation-play-state:paused]">
+              {/* We duplicate the products list twice to create a seamless loop */}
+              {[...products, ...products, ...products].map((product, i) => (
+                <div key={i} className="w-[300px] mx-4 shrink-0 group cursor-pointer">
+                  <div className="aspect-[4/5] relative rounded-2xl overflow-hidden mb-4 bg-white/5 border border-white/10">
+                    <Image
+                      src={product.images && product.images.length > 0 ? product.images[0] : (product.image || "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop")}
+                      alt={product.name}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <button className="bg-white text-black px-6 py-2 rounded-full font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <h3 className="font-bold text-white text-lg">{product.name}</h3>
+                      <div className="flex gap-1 text-yellow-500 mt-1">
+                        {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="currentColor" />)}
+                      </div>
+                    </div>
+                    <span className="text-primary font-bold text-lg">${product.price}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="text-center text-gray-500 py-12">
+            <ShoppingBag className="w-12 h-12 mx-auto mb-4 opacity-50" />
+            <p>Products loading soon...</p>
+          </div>
+        )}
       </section>
 
       {/* --- FEATURED CATEGORIES --- */}
@@ -186,27 +205,43 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products.slice(0, 4).map((product, i) => (
-            <Link href={`/shop/${product._id}`} key={i} className="group block">
-              <div className="aspect-square relative rounded-2xl overflow-hidden mb-4 bg-white/5 border border-white/10">
-                <Image
-                  src={product.images ? product.images[0] : product.image}
-                  alt={product.name}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                {product.isFeatured && (
-                  <div className="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
-                    NEW
-                  </div>
-                )}
+        {isLoading ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[...Array(4)].map((_, i) => (
+              <div key={i} className="group block">
+                <div className="aspect-square rounded-2xl bg-white/5 animate-pulse mb-4 border border-white/10" />
+                <div className="h-4 w-3/4 bg-white/5 rounded animate-pulse mb-2" />
+                <div className="h-4 w-1/4 bg-white/5 rounded animate-pulse" />
               </div>
-              <h3 className="font-bold text-white text-lg mb-1 group-hover:text-primary transition-colors">{product.name}</h3>
-              <p className="text-gray-400">${product.price}</p>
-            </Link>
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : products.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {products.slice(0, 4).map((product, i) => (
+              <Link href={`/shop/${product._id}`} key={i} className="group block">
+                <div className="aspect-square relative rounded-2xl overflow-hidden mb-4 bg-white/5 border border-white/10">
+                  <Image
+                    src={product.images ? product.images[0] : product.image}
+                    alt={product.name}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  {product.isFeatured && (
+                    <div className="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
+                      NEW
+                    </div>
+                  )}
+                </div>
+                <h3 className="font-bold text-white text-lg mb-1 group-hover:text-primary transition-colors">{product.name}</h3>
+                <p className="text-gray-400">${product.price}</p>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-12 text-gray-500">
+            <p>No products available yet. Check back soon!</p>
+          </div>
+        )}
       </section>
 
     </main>

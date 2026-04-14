@@ -1,9 +1,14 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-    apiVersion: "2023-10-16" as any,
-});
+function getStripe() {
+    if (!process.env.STRIPE_SECRET_KEY) {
+        throw new Error("STRIPE_SECRET_KEY is not configured");
+    }
+    return new Stripe(process.env.STRIPE_SECRET_KEY, {
+        apiVersion: "2023-10-16" as any,
+    });
+}
 
 export async function POST(request: Request) {
     try {
@@ -20,13 +25,14 @@ export async function POST(request: Request) {
                 currency: "usd",
                 product_data: {
                     name: item.name,
-                    images: item.images ? [item.images[0]] : [],
+                    images: item.image ? [item.image] : [],
                 },
                 unit_amount: Math.round(item.price * 100), // Stripe expects cents
             },
-            quantity: 1, // Assuming 1 for now, or use item.quantity if available
+            quantity: item.quantity || 1,
         }));
 
+        const stripe = getStripe();
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ["card"],
             line_items: lineItems,

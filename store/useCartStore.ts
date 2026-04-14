@@ -45,7 +45,7 @@ export const useCartStore = create<CartState>()(
             productId: product._id,
             name: product.name,
             price: product.price,
-            image: product.images[0],
+            image: (product.images && product.images.length > 0) ? product.images[0] : (product.image || "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop"),
             quantity: 1,
             selectedColor: product.selectedColor?.name,
             selectedStorage: product.selectedStorage?.size

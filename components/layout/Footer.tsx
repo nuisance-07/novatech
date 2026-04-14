@@ -44,8 +44,8 @@ export default function Footer() {
                         <ul className="space-y-3 text-sm text-gray-400">
                             <li><Link href="/shop" className="hover:text-primary transition">Shop All</Link></li>
                             <li><Link href="/about" className="hover:text-primary transition">About Us</Link></li>
-                            <li><Link href="/shop?category=laptops" className="hover:text-primary transition">Laptops</Link></li>
-                            <li><Link href="/shop?category=phones" className="hover:text-primary transition">Smartphones</Link></li>
+                            <li><Link href="/shop?category=Laptops" className="hover:text-primary transition">Laptops</Link></li>
+                            <li><Link href="/shop?category=Smartphones" className="hover:text-primary transition">Smartphones</Link></li>
                         </ul>
                     </div>
 

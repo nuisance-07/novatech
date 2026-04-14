@@ -59,7 +59,7 @@ export default function CartPage() {
                         <div key={item._id} className="flex gap-6 p-6 bg-white/5 border border-white/10 rounded-2xl items-center">
                             <div className="relative w-24 h-24 bg-white/5 rounded-xl overflow-hidden flex-shrink-0">
                                 <Image
-                                    src={item.image}
+                                    src={item.image || "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop"}
                                     alt={item.name}
                                     fill
                                     className="object-cover"
