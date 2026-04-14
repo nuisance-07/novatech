@@ -6,13 +6,13 @@ import { useEffect, useState } from "react";
 import { ArrowRight, ShoppingBag, Star } from "lucide-react";
 
 // --- BACKGROUND VIDEOS ---
-// Using reliable tech/futuristic stock footage URLs
+// Using reliable CDN-hosted tech footage
 const HERO_VIDEOS = [
-  "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-  "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-  "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-  "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
-  "https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+  "https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4",
+  "https://cdn.pixabay.com/video/2024/02/11/200321-912272992_large.mp4",
+  "https://cdn.pixabay.com/video/2021/08/20/85588-589813427_large.mp4",
+  "https://cdn.pixabay.com/video/2020/02/04/31950-389835452_large.mp4",
+  "https://cdn.pixabay.com/video/2023/09/08/180285-862224683_large.mp4"
 ];
 
 export default function Home() {
