@@ -5,19 +5,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ArrowRight, ShoppingBag, Star } from "lucide-react";
 
-// --- BACKGROUND VIDEOS ---
-// Using reliable CDN-hosted tech footage
-const HERO_VIDEOS = [
-  "https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4",
-  "https://cdn.pixabay.com/video/2024/02/11/200321-912272992_large.mp4",
-  "https://cdn.pixabay.com/video/2021/08/20/85588-589813427_large.mp4",
-  "https://cdn.pixabay.com/video/2020/02/04/31950-389835452_large.mp4",
-  "https://cdn.pixabay.com/video/2023/09/08/180285-862224683_large.mp4"
-];
+// --- BACKGROUND VIDEO ---
+const HERO_VIDEO = "https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4";
 
 export default function Home() {
   const [products, setProducts] = useState<any[]>([]);
-  const [currentVideo, setCurrentVideo] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
   // 1. Fetch Products
@@ -38,14 +30,6 @@ export default function Home() {
     fetchProducts();
   }, []);
 
-  // 2. Cycle Videos
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentVideo((prev) => (prev + 1) % HERO_VIDEOS.length);
-    }, 8000); // Change every 8 seconds
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <main className="min-h-screen bg-black overflow-x-hidden">
 
@@ -54,18 +38,14 @@ export default function Home() {
         {/* Video Layer */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/60 z-10" /> {/* Overlay for readability */}
-          {HERO_VIDEOS.map((src, index) => (
-            <video
-              key={src}
-              src={src}
-              autoPlay
-              muted
-              loop
-              playsInline
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentVideo ? "opacity-100" : "opacity-0"
-                }`}
-            />
-          ))}
+          <video
+            src={HERO_VIDEO}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+          />
         </div>
 
         {/* Content Layer */}
