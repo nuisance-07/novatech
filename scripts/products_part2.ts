@@ -815,8 +815,8 @@ export const productsPart2 = [
             "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop"
         ],
-        specs: { "Video": "360", "Reframing": "AI" },
-        tags: ["creator", "camera", "360"]
+        specs: { "Color": "RGBWW", "Mount": "Magnetic" },
+        tags: ["creator", "lighting", "portable"]
     },
     {
         name: "DJI Osmo Pocket 3",
@@ -827,8 +827,8 @@ export const productsPart2 = [
         stock: 35,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1579829366248-204fe8413f31?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2000&auto=format&fit=crop"
         ],
         specs: { "Sensor": "1-inch", "Stabilization": "3-Axis" },
         tags: ["creator", "camera", "vlog"]

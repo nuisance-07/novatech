@@ -2,15 +2,27 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import { ArrowRight, ShoppingBag, Star } from "lucide-react";
+import { useEffect, useState, useRef, useCallback } from "react";
+import { ArrowRight, ShoppingBag, Star, Volume2, VolumeX } from "lucide-react";
 
-// --- BACKGROUND VIDEO ---
-const HERO_VIDEO = "https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4";
+// --- HERO VIDEO PLAYLIST (Tech-themed) ---
+const HERO_VIDEOS = [
+  "https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4",
+  "https://cdn.pixabay.com/video/2024/07/24/222837_large.mp4",
+  "https://cdn.pixabay.com/video/2023/10/09/184440-873056612_large.mp4",
+  "https://cdn.pixabay.com/video/2021/04/28/73099-545738234_large.mp4",
+];
 
 export default function Home() {
   const [products, setProducts] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [nextVideoIndex, setNextVideoIndex] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const nextVideoRef = useRef<HTMLVideoElement>(null);
+  const transitionTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   // 1. Fetch Products
   useEffect(() => {
@@ -30,23 +42,122 @@ export default function Home() {
     fetchProducts();
   }, []);
 
+  // 2. Video cycling with crossfade
+  const advanceVideo = useCallback(() => {
+    const next = (currentVideoIndex + 1) % HERO_VIDEOS.length;
+    setNextVideoIndex(next);
+    setIsTransitioning(true);
+
+    // After the CSS crossfade completes (1.5s), swap the videos
+    transitionTimerRef.current = setTimeout(() => {
+      setCurrentVideoIndex(next);
+      setIsTransitioning(false);
+    }, 1500);
+  }, [currentVideoIndex]);
+
+  useEffect(() => {
+    const handleVideoEnd = () => {
+      advanceVideo();
+    };
+
+    const currentVid = videoRef.current;
+    if (currentVid) {
+      currentVid.addEventListener("ended", handleVideoEnd);
+    }
+
+    return () => {
+      if (currentVid) {
+        currentVid.removeEventListener("ended", handleVideoEnd);
+      }
+      if (transitionTimerRef.current) {
+        clearTimeout(transitionTimerRef.current);
+      }
+    };
+  }, [advanceVideo]);
+
+  // Auto-advance fallback: if video doesn't fire 'ended' (e.g., very long video), cycle every 15s
+  useEffect(() => {
+    const fallback = setInterval(() => {
+      advanceVideo();
+    }, 15000);
+    return () => clearInterval(fallback);
+  }, [advanceVideo]);
+
+  // Preload next video
+  useEffect(() => {
+    if (nextVideoRef.current) {
+      nextVideoRef.current.src = HERO_VIDEOS[(currentVideoIndex + 1) % HERO_VIDEOS.length];
+      nextVideoRef.current.load();
+    }
+  }, [currentVideoIndex]);
+
   return (
     <main className="min-h-screen bg-black overflow-x-hidden">
 
-      {/* --- HERO SECTION WITH VIDEO BACKGROUND --- */}
+      {/* --- HERO SECTION WITH VIDEO CAROUSEL BACKGROUND --- */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Video Layer */}
+        {/* Video Layers with Crossfade */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-black/60 z-10" /> {/* Overlay for readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70 z-10" />
+
+          {/* Current Video */}
           <video
-            src={HERO_VIDEO}
+            ref={videoRef}
+            key={`video-${currentVideoIndex}`}
+            src={HERO_VIDEOS[currentVideoIndex]}
             autoPlay
-            muted
-            loop
+            muted={isMuted}
             playsInline
-            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${
+              isTransitioning ? "opacity-0" : "opacity-100"
+            }`}
+          />
+
+          {/* Next Video (fades in during transition) */}
+          <video
+            ref={nextVideoRef}
+            key={`video-next-${nextVideoIndex}`}
+            src={HERO_VIDEOS[nextVideoIndex]}
+            autoPlay
+            muted={isMuted}
+            playsInline
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${
+              isTransitioning ? "opacity-100" : "opacity-0"
+            }`}
           />
         </div>
+
+        {/* Video Indicator Dots */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-3">
+          {HERO_VIDEOS.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => {
+                setNextVideoIndex(i);
+                setIsTransitioning(true);
+                setTimeout(() => {
+                  setCurrentVideoIndex(i);
+                  setIsTransitioning(false);
+                }, 1500);
+              }}
+              className={`h-1.5 rounded-full transition-all duration-500 ${
+                i === currentVideoIndex
+                  ? "w-8 bg-primary shadow-[0_0_12px_rgba(0,122,255,0.6)]"
+                  : "w-3 bg-white/30 hover:bg-white/60"
+              }`}
+              aria-label={`Switch to video ${i + 1}`}
+            />
+          ))}
+        </div>
+
+        {/* Mute / Unmute Toggle */}
+        <button
+          onClick={() => setIsMuted((v) => !v)}
+          className="absolute bottom-8 right-8 z-30 p-3 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-white hover:bg-white/20 transition-colors"
+          aria-label={isMuted ? "Unmute" : "Mute"}
+        >
+          {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
+        </button>
 
         {/* Content Layer */}
         <div className="z-20 text-center px-4 max-w-5xl mx-auto">

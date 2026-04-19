@@ -321,8 +321,8 @@ export const productsPart1 = [
         stock: 45,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1674230239564-b5220c386629?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=2027&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=2080&auto=format&fit=crop"
         ],
         specs: { "Chip": "Tensor G3", "Camera": "50MP" },
         tags: ["phone", "google", "pixel", "android"]
@@ -336,8 +336,8 @@ export const productsPart1 = [
         stock: 50,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1674230239564-b5220c386629?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1585060544812-6b45742d762f?q=80&w=2081&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=2039&auto=format&fit=crop"
         ],
         specs: { "Chip": "Snapdragon 8 Gen 3", "Charging": "100W" },
         tags: ["phone", "oneplus", "android"]
@@ -351,8 +351,8 @@ export const productsPart1 = [
         stock: 30,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1696429175928-793a1cdef1d3?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1696429175928-793a1cdef1d3?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1556656793-08538906a9f8?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1605236453806-6ff36851218e?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Camera": "Quad 50MP Leica", "Chip": "Snapdragon 8 Gen 3" },
         tags: ["phone", "xiaomi", "camera", "android"]
@@ -366,8 +366,8 @@ export const productsPart1 = [
         stock: 40,
         rating: 4.6,
         images: [
-            "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1674230239564-b5220c386629?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?q=80&w=2034&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1580910051074-3eb694886f94?q=80&w=2065&auto=format&fit=crop"
         ],
         specs: { "Interface": "Glyph", "Screen": "LTPO OLED" },
         tags: ["phone", "nothing", "unique", "android"]
@@ -381,8 +381,8 @@ export const productsPart1 = [
         stock: 80,
         rating: 4.5,
         images: [
-            "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1674230239564-b5220c386629?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1533228100845-08145b01de14?q=80&w=2069&auto=format&fit=crop"
         ],
         specs: { "Camera": "50MP", "Charging": "70W" },
         tags: ["phone", "tecno", "android"]
@@ -396,8 +396,8 @@ export const productsPart1 = [
         stock: 60,
         rating: 4.4,
         images: [
-            "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1674230239564-b5220c386629?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?q=80&w=2067&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1512054502232-10a0a035d672?q=80&w=2080&auto=format&fit=crop"
         ],
         specs: { "Charging": "100W", "Screen": "120Hz" },
         tags: ["phone", "infinix", "android"]
@@ -411,8 +411,8 @@ export const productsPart1 = [
         stock: 20,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1674230239564-b5220c386629?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1523206489230-c012c64b2b48?q=80&w=2048&auto=format&fit=crop"
         ],
         specs: { "Screen": "4K OLED", "Audio": "3.5mm Jack" },
         tags: ["phone", "sony", "creator", "android"]
@@ -426,8 +426,8 @@ export const productsPart1 = [
         stock: 80,
         rating: 4.6,
         images: [
-            "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1674230239564-b5220c386629?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1565849904461-04a28ad377e0?q=80&w=2072&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Chip": "Tensor G2", "Camera": "64MP" },
         tags: ["phone", "google", "value", "android"]
@@ -441,8 +441,8 @@ export const productsPart1 = [
         stock: 15,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1674230239564-b5220c386629?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1615552440485-a9142a0406b3?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1551355738-1875b6f4f130?q=80&w=2088&auto=format&fit=crop"
         ],
         specs: { "Screen": "Foldable", "RAM": "16GB" },
         tags: ["phone", "oneplus", "foldable", "android"]
@@ -456,8 +456,8 @@ export const productsPart1 = [
         stock: 30,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1674230239564-b5220c386629?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1556656793-08538906a9f8?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=2039&auto=format&fit=crop"
         ],
         specs: { "Screen": "Foldable", "Refresh": "165Hz" },
         tags: ["phone", "motorola", "foldable", "android"]
@@ -475,8 +475,8 @@ export const productsPart1 = [
         stock: 30,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?q=80&w=2069&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=2071&auto=format&fit=crop"
         ],
         specs: { "Processor": "i9", "GPU": "RTX 4060", "Screen": "OLED" },
         tags: ["laptop", "dell", "windows", "creator"]
@@ -490,8 +490,8 @@ export const productsPart1 = [
         stock: 25,
         rating: 4.6,
         images: [
-            "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=2064&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Type": "2-in-1", "Screen": "Touch OLED" },
         tags: ["laptop", "hp", "convertible"]
@@ -505,8 +505,8 @@ export const productsPart1 = [
         stock: 40,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop"
         ],
         specs: { "Weight": "1.12kg", "Durability": "Mil-Spec" },
         tags: ["laptop", "lenovo", "business"]
@@ -520,8 +520,8 @@ export const productsPart1 = [
         stock: 35,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1602080858428-57174f9431cf?q=80&w=2071&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "GPU": "RTX 4070", "Screen": "120Hz OLED" },
         tags: ["laptop", "gaming", "asus"]
@@ -535,8 +535,8 @@ export const productsPart1 = [
         stock: 10,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1603302576837-37561b2e2302?q=80&w=2068&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "GPU": "RTX 4090", "Screen": "Dual Mode Mini-LED" },
         tags: ["laptop", "gaming", "razer", "premium"]
@@ -550,8 +550,8 @@ export const productsPart1 = [
         stock: 45,
         rating: 4.6,
         images: [
-            "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1629131726692-1accd0c53ce0?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1504707748692-419802cf939d?q=80&w=2047&auto=format&fit=crop"
         ],
         specs: { "Screen": "13.5 inch Touch", "Finish": "Alcantara" },
         tags: ["laptop", "microsoft", "surface"]
@@ -565,8 +565,8 @@ export const productsPart1 = [
         stock: 50,
         rating: 4.5,
         images: [
-            "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1544731612-de7f96afe55f?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=2064&auto=format&fit=crop"
         ],
         specs: { "Processor": "Core Ultra 5", "Weight": "1.3kg" },
         tags: ["laptop", "acer", "budget"]
@@ -580,8 +580,8 @@ export const productsPart1 = [
         stock: 15,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1602080858428-57174f9431cf?q=80&w=2071&auto=format&fit=crop"
         ],
         specs: { "GPU": "RTX 4080", "RGB": "Matrix Bar" },
         tags: ["laptop", "gaming", "msi"]
@@ -595,8 +595,8 @@ export const productsPart1 = [
         stock: 25,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=2071&auto=format&fit=crop"
         ],
         specs: { "Weight": "1.35kg", "Battery": "20 Hours" },
         tags: ["laptop", "lg", "lightweight"]
@@ -610,8 +610,8 @@ export const productsPart1 = [
         stock: 20,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Modular": "Yes", "Repairable": "10/10" },
         tags: ["laptop", "framework", "sustainable"]
@@ -644,8 +644,8 @@ export const productsPart1 = [
         stock: 80,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=2080&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=2071&auto=format&fit=crop"
         ],
         specs: { "Switch": "Red/Blue/Brown", "Layout": "75%" },
         tags: ["accessory", "keyboard", "mechanical"]
@@ -659,8 +659,8 @@ export const productsPart1 = [
         stock: 100,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1517336714731-489689fd1ca4?q=80&w=2026&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?q=80&w=2072&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585338447937-7082f8fc763d?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Capacity": "24000mAh", "Output": "140W" },
         tags: ["accessory", "powerbank", "charging"]
@@ -690,7 +690,7 @@ export const productsPart1 = [
         rating: 4.7,
         images: [
             "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=2042&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=2042&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "MagSafe": "Yes", "Power": "15W" },
         tags: ["accessory", "charger", "wireless"]
@@ -720,7 +720,7 @@ export const productsPart1 = [
         rating: 4.9,
         images: [
             "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1622560480605-d83c661629ef?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Material": "Recycled Nylon", "Weatherproof": "Yes" },
         tags: ["accessory", "bag", "organizer"]
@@ -734,8 +734,8 @@ export const productsPart1 = [
         stock: 40,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1517336714731-489689fd1ca4?q=80&w=2026&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1527443195645-1133f7f28990?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Color": "Black/White", "Connection": "Bluetooth" },
         tags: ["accessory", "apple", "input"]
@@ -749,8 +749,8 @@ export const productsPart1 = [
         stock: 100,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=2042&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1596742578443-7682ef5251cd?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Resolution": "1080p", "Mic": "Stereo" },
         tags: ["accessory", "webcam", "streaming"]
@@ -764,8 +764,8 @@ export const productsPart1 = [
         stock: 60,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=2042&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=2042&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=2080&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=2071&auto=format&fit=crop"
         ],
         specs: { "Keys": "15", "Interface": "USB" },
         tags: ["accessory", "streaming", "productivity"]
