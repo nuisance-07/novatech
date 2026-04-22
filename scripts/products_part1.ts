@@ -674,8 +674,8 @@ export const productsPart1 = [
         stock: 60,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1724251280779-65a10faf1b6a?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1756836857559-4c8161fe07f3?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "1050MB/s", "Rugged": "Yes" },
         tags: ["accessory", "storage", "ssd"]

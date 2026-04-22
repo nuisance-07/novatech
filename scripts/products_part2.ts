@@ -474,8 +474,8 @@ export const productsPart2 = [
         stock: 100,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1724251280779-65a10faf1b6a?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1756836857559-4c8161fe07f3?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "7450MB/s", "Interface": "PCIe 4.0" },
         tags: ["storage", "ssd", "nvme"]
@@ -489,8 +489,8 @@ export const productsPart2 = [
         stock: 80,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1756836857559-4c8161fe07f3?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1724251280779-65a10faf1b6a?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "7300MB/s", "Heatsink": "Optional" },
         tags: ["storage", "ssd", "gaming"]
@@ -519,8 +519,8 @@ export const productsPart2 = [
         stock: 60,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1724251280779-65a10faf1b6a?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1756836857559-4c8161fe07f3?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "2000MB/s", "Portable": "Yes" },
         tags: ["storage", "ssd", "external"]
@@ -564,8 +564,8 @@ export const productsPart2 = [
         stock: 50,
         rating: 4.6,
         images: [
-            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1756836857559-4c8161fe07f3?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1724251280779-65a10faf1b6a?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "2000MB/s", "Size": "Tiny" },
         tags: ["storage", "ssd", "portable"]
@@ -609,8 +609,8 @@ export const productsPart2 = [
         stock: 60,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1724251280779-65a10faf1b6a?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1756836857559-4c8161fe07f3?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "1050MB/s", "Durability": "IP55" },
         tags: ["storage", "ssd", "portable"]
@@ -812,8 +812,8 @@ export const productsPart2 = [
         stock: 50,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1547394765-185e1e68f34e?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1745848038063-bbb6fc8c8867?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1762930518927-e5aeb17ba7bc?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Color": "RGBWW", "Mount": "Magnetic" },
         tags: ["creator", "lighting", "portable"]
@@ -872,8 +872,8 @@ export const productsPart2 = [
         stock: 100,
         rating: 4.6,
         images: [
-            "https://images.unsplash.com/photo-1547394765-185e1e68f34e?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1745848038063-bbb6fc8c8867?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1762930518927-e5aeb17ba7bc?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Size": "18 inch", "Stand": "Included" },
         tags: ["creator", "lighting", "studio"]
@@ -887,8 +887,8 @@ export const productsPart2 = [
         stock: 30,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1547394765-185e1e68f34e?q=80&w=2072&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1762930518927-e5aeb17ba7bc?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1745848038063-bbb6fc8c8867?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Control": "App", "Temp": "Adjustable" },
         tags: ["creator", "lighting", "streaming"]
@@ -917,8 +917,8 @@ export const productsPart2 = [
         stock: 30,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1724251280779-65a10faf1b6a?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1756836857559-4c8161fe07f3?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "1050MB/s", "Rugged": "Yes" },
         tags: ["creator", "storage", "ssd"]

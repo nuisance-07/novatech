@@ -9,8 +9,8 @@ import { ArrowRight, ShoppingBag, Star, Volume2, VolumeX } from "lucide-react";
 const HERO_VIDEOS = [
   "https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4",
   "https://cdn.pixabay.com/video/2024/07/24/222837_large.mp4",
-  "https://cdn.pixabay.com/video/2023/10/09/184440-873056612_large.mp4",
-  "https://cdn.pixabay.com/video/2021/04/28/73099-545738234_large.mp4",
+  "https://cdn.pixabay.com/video/2023/01/13/146336-789093861_large.mp4",
+  "https://cdn.pixabay.com/video/2024/09/14/231485_large.mp4",
 ];
 
 export default function Home() {
@@ -270,7 +270,7 @@ export default function Home() {
           </div>
           <div className="relative h-[400px] rounded-3xl overflow-hidden group cursor-pointer border border-white/10">
             <Image
-              src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?q=80&w=1600&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1718217028088-a23cb3b277c4?q=80&w=1600&auto=format&fit=crop"
               alt="Audio"
               fill
               className="object-cover group-hover:scale-105 transition duration-700"
