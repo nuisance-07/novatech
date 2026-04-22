@@ -41,7 +41,7 @@ export const productsPart2 = [
         stock: 150,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?q=80&w=2072&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Power": "65W", "Tech": "GaN II" },
@@ -57,7 +57,7 @@ export const productsPart2 = [
         rating: 4.5,
         images: [
             "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1586816879360-004f5b0c51e3?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1585338447937-7082f8fc763d?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Capacity": "1460mAh", "Type": "Magnetic" },
         tags: ["accessory", "powerbank", "apple"]
@@ -72,7 +72,7 @@ export const productsPart2 = [
         rating: 4.6,
         images: [
             "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1586816879360-004f5b0c51e3?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?q=80&w=2072&auto=format&fit=crop"
         ],
         specs: { "Mount": "MagSafe", "Function": "Grip/Stand" },
         tags: ["accessory", "grip", "phone"]
@@ -101,7 +101,7 @@ export const productsPart2 = [
         stock: 100,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?q=80&w=2072&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Capacity": "5000mAh", "Stand": "Yes" },
@@ -116,7 +116,7 @@ export const productsPart2 = [
         stock: 120,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585338447937-7082f8fc763d?q=80&w=2070&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Power": "45W", "Port": "USB-C" },
@@ -131,8 +131,8 @@ export const productsPart2 = [
         stock: 40,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1579829366248-204fe8413f31?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2000&auto=format&fit=crop"
         ],
         specs: { "Axis": "3-Axis", "Feature": "ActiveTrack 6.0" },
         tags: ["accessory", "gimbal", "video"]
@@ -335,8 +335,8 @@ export const productsPart2 = [
         stock: 80,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1621259182902-5b8340fdd585?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1605901309584-818e25960b8f?q=80&w=2087&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=2071&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Performance": "12 TFLOPS", "Storage": "1TB SSD" },
         tags: ["gaming", "console", "xbox"]
@@ -350,8 +350,8 @@ export const productsPart2 = [
         stock: 120,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1648454840735-a99071006096?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Screen": "7-inch OLED", "Mode": "Handheld/TV" },
         tags: ["gaming", "console", "nintendo"]
@@ -365,8 +365,8 @@ export const productsPart2 = [
         stock: 40,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1655562723793-45543c727192?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1655562724283-7d7293527234?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Screen": "HDR OLED", "Battery": "Longer Life" },
         tags: ["gaming", "handheld", "pc"]
@@ -380,8 +380,8 @@ export const productsPart2 = [
         stock: 50,
         rating: 4.6,
         images: [
-            "https://images.unsplash.com/photo-1685647565759-45922312683d?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1685647565759-45922312683d?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=2071&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Chip": "Ryzen Z1 Extreme", "Screen": "120Hz" },
         tags: ["gaming", "handheld", "windows"]
@@ -396,7 +396,7 @@ export const productsPart2 = [
         rating: 4.8,
         images: [
             "https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1592840496011-8b3412a13903?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Customizable": "Yes", "Paddles": "Back Buttons" },
         tags: ["gaming", "controller", "pro"]
@@ -411,7 +411,7 @@ export const productsPart2 = [
         rating: 4.7,
         images: [
             "https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1592840496011-8b3412a13903?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Battery": "40 Hours", "Customizable": "Yes" },
         tags: ["gaming", "controller", "pro"]
@@ -474,8 +474,8 @@ export const productsPart2 = [
         stock: 100,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "7450MB/s", "Interface": "PCIe 4.0" },
         tags: ["storage", "ssd", "nvme"]
@@ -489,8 +489,8 @@ export const productsPart2 = [
         stock: 80,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "7300MB/s", "Heatsink": "Optional" },
         tags: ["storage", "ssd", "gaming"]
@@ -519,8 +519,8 @@ export const productsPart2 = [
         stock: 60,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "2000MB/s", "Portable": "Yes" },
         tags: ["storage", "ssd", "external"]
@@ -534,8 +534,8 @@ export const productsPart2 = [
         stock: 40,
         rating: 4.6,
         images: [
-            "https://images.unsplash.com/photo-1531492746076-a61b643c258c?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1544652478-6653e09f1826?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "RPM": "7200", "Cache": "256MB" },
         tags: ["storage", "hdd", "nas"]
@@ -549,8 +549,8 @@ export const productsPart2 = [
         stock: 30,
         rating: 4.5,
         images: [
-            "https://images.unsplash.com/photo-1531492746076-a61b643c258c?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1544652478-6653e09f1826?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Type": "External HDD", "Power": "AC Adapter" },
         tags: ["storage", "hdd", "backup"]
@@ -564,8 +564,8 @@ export const productsPart2 = [
         stock: 50,
         rating: 4.6,
         images: [
-            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "2000MB/s", "Size": "Tiny" },
         tags: ["storage", "ssd", "portable"]
@@ -609,8 +609,8 @@ export const productsPart2 = [
         stock: 60,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "1050MB/s", "Durability": "IP55" },
         tags: ["storage", "ssd", "portable"]
@@ -797,8 +797,8 @@ export const productsPart2 = [
         stock: 60,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1565849904461-04a28ad377e0?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1565849904461-04a28ad377e0?q=80&w=2072&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2000&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1516724562728-afc824a36e84?q=80&w=2071&auto=format&fit=crop"
         ],
         specs: { "Video": "5.3K", "Waterproof": "33ft" },
         tags: ["creator", "camera", "action"]
@@ -812,8 +812,8 @@ export const productsPart2 = [
         stock: 50,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1547394765-185e1e68f34e?q=80&w=2072&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Color": "RGBWW", "Mount": "Magnetic" },
         tags: ["creator", "lighting", "portable"]
@@ -843,7 +843,7 @@ export const productsPart2 = [
         rating: 4.9,
         images: [
             "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2000&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2000&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1516724562728-afc824a36e84?q=80&w=2071&auto=format&fit=crop"
         ],
         specs: { "Sensor": "APS-C", "Focus": "Real-time Eye AF" },
         tags: ["creator", "camera", "vlog"]
@@ -858,7 +858,7 @@ export const productsPart2 = [
         rating: 4.9,
         images: [
             "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=2032&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=2032&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=2084&auto=format&fit=crop"
         ],
         specs: { "Range": "260m", "Recording": "Onboard" },
         tags: ["creator", "audio", "mic"]
@@ -872,8 +872,8 @@ export const productsPart2 = [
         stock: 100,
         rating: 4.6,
         images: [
-            "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1547394765-185e1e68f34e?q=80&w=2072&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Size": "18 inch", "Stand": "Included" },
         tags: ["creator", "lighting", "studio"]
@@ -887,8 +887,8 @@ export const productsPart2 = [
         stock: 30,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2072&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1547394765-185e1e68f34e?q=80&w=2072&auto=format&fit=crop"
         ],
         specs: { "Control": "App", "Temp": "Adjustable" },
         tags: ["creator", "lighting", "streaming"]
@@ -903,7 +903,7 @@ export const productsPart2 = [
         rating: 4.7,
         images: [
             "https://images.unsplash.com/photo-1516724562728-afc824a36e84?q=80&w=2071&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1516724562728-afc824a36e84?q=80&w=2071&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2000&auto=format&fit=crop"
         ],
         specs: { "Legs": "Flexible", "Head": "Ballhead" },
         tags: ["creator", "tripod", "flexible"]
@@ -917,8 +917,8 @@ export const productsPart2 = [
         stock: 30,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "1050MB/s", "Rugged": "Yes" },
         tags: ["creator", "storage", "ssd"]

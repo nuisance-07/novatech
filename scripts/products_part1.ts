@@ -13,7 +13,7 @@ export const productsPart1 = [
         isFeatured: true,
         images: [
             "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=2071&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1706606991536-e3204238b34e?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?q=80&w=2071&auto=format&fit=crop"
         ],
         specs: { "Storage": "512GB", "RAM": "12GB", "Camera": "200MP Main", "Screen": "6.8-inch AMOLED" },
         tags: ["phone", "samsung", "flagship", "android", "ai"]
@@ -27,8 +27,8 @@ export const productsPart1 = [
         stock: 60,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1707926775662-79354e588363?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1610945265064-f45a855f79d1?q=80&w=2071&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?q=80&w=2072&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=2071&auto=format&fit=crop"
         ],
         specs: { "Storage": "256GB", "RAM": "12GB", "Screen": "6.7-inch QHD+" },
         tags: ["phone", "samsung", "android"]
@@ -42,8 +42,8 @@ export const productsPart1 = [
         stock: 80,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1706606991536-e3204238b34e?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?q=80&w=2071&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?q=80&w=2071&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?q=80&w=2072&auto=format&fit=crop"
         ],
         specs: { "Storage": "128GB", "Screen": "6.2-inch FHD+" },
         tags: ["phone", "samsung", "compact"]
@@ -57,8 +57,8 @@ export const productsPart1 = [
         stock: 30,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1659124430485-643663673c4d?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1659124430386-880292723388?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?q=80&w=2034&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Storage": "512GB", "Screen": "Foldable 7.6-inch" },
         tags: ["phone", "samsung", "foldable", "premium"]
@@ -72,8 +72,8 @@ export const productsPart1 = [
         stock: 40,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1692127533083-20768c8c5057?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1692127533156-554526618589?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?q=80&w=2034&auto=format&fit=crop"
         ],
         specs: { "Storage": "256GB", "Screen": "Foldable 6.7-inch" },
         tags: ["phone", "samsung", "foldable", "stylish"]
@@ -87,8 +87,8 @@ export const productsPart1 = [
         stock: 100,
         rating: 4.5,
         images: [
-            "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?q=80&w=2072&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1674230239564-b5220c386629?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=2080&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585060544812-6b45742d762f?q=80&w=2081&auto=format&fit=crop"
         ],
         specs: { "Storage": "128GB", "Camera": "50MP" },
         tags: ["phone", "samsung", "midrange"]
@@ -102,8 +102,8 @@ export const productsPart1 = [
         stock: 50,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1695191569420-562388055653?q=80&w=2071&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1695191569300-47b25866752d?q=80&w=2071&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Size": "47mm", "Health": "BIA Sensor" },
         tags: ["watch", "samsung", "wearable"]
@@ -117,8 +117,8 @@ export const productsPart1 = [
         stock: 120,
         rating: 4.6,
         images: [
-            "https://images.unsplash.com/photo-1662057924403-24754593e394?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1662057924458-132d7547d252?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=2032&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Audio": "24-bit Hi-Fi", "ANC": "Yes" },
         tags: ["audio", "buds", "samsung"]
@@ -132,8 +132,8 @@ export const productsPart1 = [
         stock: 25,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1695191569352-777e30d74549?q=80&w=2071&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1675283995586-444453535267?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Screen": "14.6 inch", "S-Pen": "Included" },
         tags: ["tablet", "samsung", "android"]
@@ -148,7 +148,7 @@ export const productsPart1 = [
         rating: 4.7,
         images: [
             "https://images.unsplash.com/photo-1660236822651-4263beb35fa8?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1660236822648-52472097985d?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=2071&auto=format&fit=crop"
         ],
         specs: { "Processor": "Intel Core Ultra 7", "Screen": "14-inch AMOLED" },
         tags: ["laptop", "samsung", "windows"]
@@ -182,8 +182,8 @@ export const productsPart1 = [
         stock: 70,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1696446702183-f8a587f5743a?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1695048133021-69796d316a84?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1523206489230-c012c64b2b48?q=80&w=2048&auto=format&fit=crop"
         ],
         specs: { "Storage": "128GB", "Chip": "A17 Pro" },
         tags: ["phone", "apple", "iphone"]
@@ -197,8 +197,8 @@ export const productsPart1 = [
         stock: 100,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1695048132890-c584fc669d4c?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1696446700547-51e24747535c?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1523206489230-c012c64b2b48?q=80&w=2048&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Storage": "128GB", "Chip": "A16 Bionic" },
         tags: ["phone", "apple", "iphone"]
@@ -227,8 +227,8 @@ export const productsPart1 = [
         stock: 15,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1517336714731-489689fd1ca4?q=80&w=2026&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Chip": "M3 Max", "RAM": "36GB", "Storage": "1TB" },
         tags: ["laptop", "apple", "macbook", "pro"]
@@ -242,8 +242,8 @@ export const productsPart1 = [
         stock: 50,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1517336714731-489689fd1ca4?q=80&w=2026&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=2071&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Chip": "M3", "Screen": "15.3 inch" },
         tags: ["laptop", "apple", "macbook", "air"]
@@ -257,8 +257,8 @@ export const productsPart1 = [
         stock: 40,
         rating: 4.9,
         images: [
-            "https://images.unsplash.com/photo-1695304386906-8c909616231c?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1695304386419-48245366573a?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Case": "Titanium", "Battery": "36 Hours" },
         tags: ["watch", "apple", "wearable"]
@@ -272,8 +272,8 @@ export const productsPart1 = [
         stock: 200,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1603351154351-5cfb3d04ef32?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1629367494173-c78a56567877?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1629367494173-c78a56567877?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Case": "USB-C", "ANC": "Yes" },
         tags: ["audio", "apple", "airpods"]
@@ -287,8 +287,8 @@ export const productsPart1 = [
         stock: 100,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1554596395-8854376483cb?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1589365278144-bd407fa47332?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=2015&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Compatibility": "iPad Pro/Air" },
         tags: ["accessory", "apple", "creative"]
@@ -321,8 +321,8 @@ export const productsPart1 = [
         stock: 45,
         rating: 4.7,
         images: [
-            "https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=2027&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=2080&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=2080&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1512054502232-10a0a035d672?q=80&w=2080&auto=format&fit=crop"
         ],
         specs: { "Chip": "Tensor G3", "Camera": "50MP" },
         tags: ["phone", "google", "pixel", "android"]
@@ -367,7 +367,7 @@ export const productsPart1 = [
         rating: 4.6,
         images: [
             "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?q=80&w=2034&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1580910051074-3eb694886f94?q=80&w=2065&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?q=80&w=2067&auto=format&fit=crop"
         ],
         specs: { "Interface": "Glyph", "Screen": "LTPO OLED" },
         tags: ["phone", "nothing", "unique", "android"]
@@ -426,7 +426,7 @@ export const productsPart1 = [
         stock: 80,
         rating: 4.6,
         images: [
-            "https://images.unsplash.com/photo-1565849904461-04a28ad377e0?q=80&w=2072&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1512054502232-10a0a035d672?q=80&w=2080&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Chip": "Tensor G2", "Camera": "64MP" },
@@ -441,8 +441,8 @@ export const productsPart1 = [
         stock: 15,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1615552440485-a9142a0406b3?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1551355738-1875b6f4f130?q=80&w=2088&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1605236453806-6ff36851218e?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?q=80&w=2034&auto=format&fit=crop"
         ],
         specs: { "Screen": "Foldable", "RAM": "16GB" },
         tags: ["phone", "oneplus", "foldable", "android"]
@@ -521,7 +521,7 @@ export const productsPart1 = [
         rating: 4.8,
         images: [
             "https://images.unsplash.com/photo-1602080858428-57174f9431cf?q=80&w=2071&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "GPU": "RTX 4070", "Screen": "120Hz OLED" },
         tags: ["laptop", "gaming", "asus"]
@@ -630,7 +630,7 @@ export const productsPart1 = [
         rating: 4.9,
         images: [
             "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1586816879360-004f5b0c51e3?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "DPI": "8000", "Connectivity": "Bluetooth/Bolt" },
         tags: ["accessory", "mouse", "productivity"]
@@ -674,8 +674,8 @@ export const productsPart1 = [
         stock: 60,
         rating: 4.8,
         images: [
-            "https://images.unsplash.com/photo-1588702547923-7093a6c3f067?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1588702547919-b9545748d70b?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=2070&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Speed": "1050MB/s", "Rugged": "Yes" },
         tags: ["accessory", "storage", "ssd"]
@@ -705,7 +705,7 @@ export const productsPart1 = [
         rating: 4.6,
         images: [
             "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1586816879360-004f5b0c51e3?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Ports": "V2", "HDMI": "4K" },
         tags: ["accessory", "hub", "dongle"]
@@ -720,7 +720,7 @@ export const productsPart1 = [
         rating: 4.9,
         images: [
             "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=2070&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1622560480605-d83c661629ef?q=80&w=2070&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1491933382434-500287f9b54b?q=80&w=2070&auto=format&fit=crop"
         ],
         specs: { "Material": "Recycled Nylon", "Weatherproof": "Yes" },
         tags: ["accessory", "bag", "organizer"]
